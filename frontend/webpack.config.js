@@ -6,7 +6,7 @@ const BundleAnalyzerPlugin =
 module.exports = {
   mode: 'development',
   entry: {
-    bundle: path.resolve(__dirname, '/src/index.js'),
+    bundle: path.join(__dirname, '/src/index.js'),
   },
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -14,31 +14,18 @@ module.exports = {
     clean: true,
     assetModuleFilename: '[name][ext]',
   },
-  devtool: 'source-map',
-  devServer: {
-    static: {
-      directory: path.resolve(__dirname, '/build'),
-    },
-    port: 3000,
-    open: true,
-    hot: true,
-    compress: true,
-    historyApiFallback: true,
-  },
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
+          options: { presets: ['@babel/env','@babel/preset-react'] }
         },
       },
       {
@@ -50,7 +37,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Webpack App',
-      filename: 'index.html'
+      filename: 'index.html',
+      template: 'public/index.html',
     }),
     new BundleAnalyzerPlugin(),
   ],

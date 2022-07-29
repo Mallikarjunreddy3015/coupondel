@@ -4,6 +4,8 @@
   "description": "Official repo of CouponDel",
   "main": "webpack.config.js",
   "scripts": {
+    "start": "nodemon backend/server.js",
+    "build": " ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -11,13 +11,11 @@ return(
     Hello hi iam Mallikarjun
 </h1>
 
-<Image  source={require('../public/images/me.png')}/>
+<img  src={'C:\Users\reddy\Documents\GitHub\coupondel\frontend\public\images\me.png'}/>
 </div>
-
 
 )
 
 
 }
-
-module.exports=App;
+export default App;
