@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import logo from '../public/me.png';
 
 
 
@@ -11,7 +12,7 @@ return(
     Hello hi iam Mallikarjun
 </h1>
 
-<img  src={ "../public/me.png"}/>
+<img src={ logo} alt="logo" />
 </div>
 
 )
