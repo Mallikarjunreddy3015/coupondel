@@ -9,7 +9,7 @@ function App(){
 return(
 <div>
 <h1>
-    Hello hi iam Mallikarjun
+    Welcome to Coupondel
 </h1>
 
 <img src={ logo} alt="logo" />
