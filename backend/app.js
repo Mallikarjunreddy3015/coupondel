@@ -7,11 +7,12 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 }
 
 
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+app.use(express.static(path.join(__dirname, "../frontend/public")));
 
 app.get("*", (req, res) => {
-  res.render(path.resolve(__dirname, "../frontend/build/index.html"));
+  res.render(path.resolve(__dirname, "../frontend/pulic/index.html"));
 });
+
 
 
 

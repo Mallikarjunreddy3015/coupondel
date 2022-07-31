@@ -11,7 +11,7 @@ return(
     Hello hi iam Mallikarjun
 </h1>
 
-<img  src={'C:\Users\reddy\Documents\GitHub\coupondel\frontend\public\images\me.png'}/>
+<img  src={ "../public/me.png"}/>
 </div>
 
 )
