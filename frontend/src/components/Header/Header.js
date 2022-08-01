@@ -1,12 +1,11 @@
 import React from "react";
-import { ReactNavbar } from "overlay-navbar";
-
-const options = {
-
-};
 
 const Header = () => {
-  return <ReactNavbar {...options} />;
+  return (
+    <>
+      <h1>hi all</h1>
+    </>
+  );
 };
 
 export default Header;
