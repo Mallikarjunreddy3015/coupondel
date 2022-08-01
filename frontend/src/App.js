@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import logo from '../public/me.png';
+import logo from './Images/me.png';
 
 
 
