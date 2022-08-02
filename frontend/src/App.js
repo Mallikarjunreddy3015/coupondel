@@ -1,22 +1,18 @@
 import "./App.css";
 import React from "react";
-import logo from './Images/me.png';
+import Header from "./components/Header/Header";
+import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 
+import logo from "./Images/me.png";
 
-
-function App(){
-
-return(
-<div>
-<h1>
-    Welcome to Coupondel
-</h1>
-
-<img src={ logo} alt="logo" />
-</div>
-
-)
-
-
+function App() {
+  return (
+    <div>
+      <Header />
+      <About />
+      <Footer />
+    </div>
+  );
 }
 export default App;

@@ -1,8 +1,89 @@
-body {
-    background-color: #da1ba7;
-    color: white;
-    padding: 20px;
-    font-family: Sans-Serif;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+:root{
+    --primary-button : #1e90ff ;
+    --secondary-buttton : #263238;
+    --logo-blue : #085CFF;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(85, 85, 82);
+    font-family: 'Mulish', sans-serif;
+
+}
+
+/* ........................Header styles........................ */
+
+header{
+    display: block;
+    width: 85%;
+    margin: 0 auto;
     text-align: center;
+}
+
+header nav{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+header nav img {
+    width: 10rem;
+}
+header nav ul li{
+    list-style: none;
+    color: black;
+}
+nav ul li a {
+    text-decoration: none;
+}
+    
+nav button{
+    position: relative;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, #36D1DC 0%, #5B86E5  51%, #36D1DC  100%);
+    transition: 0.5s;
+    background-size: 200% auto;           
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6rem;
+    font-size: 1rem;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #fff;
   }
-  
+
+nav button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+nav button i{
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    right: 12%;
+}
+nav button :hover{
+    right: 9%;
+}
+ 
+

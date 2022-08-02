@@ -1,12 +1,37 @@
 import React from "react";
-import { ReactNavbar } from "overlay-navbar";
+import logo from "../../icons/logo-icon.png";
 
-const options = {
-
-};
-
-const Header = () => {
-  return <ReactNavbar {...options} />;
-};
+function Header() {
+  return (
+    <>
+      <header>
+        <nav>
+          <img src={logo} alt="logo" />
+          <ul>
+            <li>
+              {" "}
+              <a href="#">Products</a>{" "}
+            </li>
+            <li>
+              {" "}
+              <a href="#">Motive</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#">About</a>{" "}
+            </li>
+            <li>
+              {" "}
+              <a href="#">Contact</a>{" "}
+            </li>
+          </ul>
+          <button>
+            Sign in <i class="fi fi-rr-angle-right"></i>
+          </button>
+        </nav>
+      </header>
+    </>
+  );
+}
 
 export default Header;
