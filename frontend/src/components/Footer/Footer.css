@@ -1,0 +1,41 @@
+.footer-container{
+    background-color: rgba(84, 84, 84, 1);
+    height: 300px;
+}
+.footer-main{
+    width: 95%;
+    display: inline-block;
+    
+}
+.footer-main img{
+  width: 10rem;
+  display: inline-block;
+}
+.footer-main ul{
+    width: 20%;
+    display: inline-block;
+}
+.footer-links{
+    width: 80%;
+    float: right;
+    margin-top: 20px;
+}
+.footer-links a{
+    color: white;
+    text-decoration: none;
+}
+.footer-main li{
+    text-align: center;
+    list-style: none;
+    color: white;
+    font-size: large;
+}
+.footer-copy{
+    background-color:rgba(52, 52, 52, 1) ;
+    line-height: 4rem;
+    width: 100%;
+    text-align: center;
+}
+.footer-copy p{
+    color: white;
+}
