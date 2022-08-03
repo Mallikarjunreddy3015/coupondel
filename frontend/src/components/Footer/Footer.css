@@ -8,12 +8,10 @@
     width: 90%;
     display: block;
     margin: auto;
-
 }
 .footer-main img{
   width: 160px;
   display: block;
-
 }
 .footer-links{
     display: flex;
@@ -52,13 +50,16 @@
 .footer-copy p{
     color:white;
 }
-
+.social-Media{
+    display: flex;
+    flex-wrap: wrap;
+}
 .social-Media li{
       display: inline;
       word-wrap: normal;
 }
 .social-Media i{
-
+   font-size: 40px;
    margin: 3px;
 }
 .social-Media i:hover{
@@ -80,4 +81,4 @@
     .footer-col li{
         border-bottom: 2px solid #2b2a2a;
     }
-
+}

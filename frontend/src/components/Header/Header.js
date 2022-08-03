@@ -1,17 +1,20 @@
 import React from "react";
 import logo from "../../icons/logo-icon.png";
-import Button from "../Button";
 
 function Header() {
   return (
     <>
-      <header id="header">
+      <header>
         <nav>
           <img src={logo} alt="logo" />
           <ul>
             <li>
               {" "}
               <a href="#">Products</a>{" "}
+            </li>
+            <li>
+              {" "}
+              <a href="#">Motive</a>
             </li>
             <li>
               {" "}
@@ -22,7 +25,9 @@ function Header() {
               <a href="#">Contact</a>{" "}
             </li>
           </ul>
-          <Button name={"Sign in"} type={"button"} />
+          <button>
+            Sign in <i class="fi fi-rr-angle-right"></i>
+          </button>
         </nav>
       </header>
     </>
