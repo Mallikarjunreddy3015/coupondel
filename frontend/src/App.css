@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
+
 :root{
     --primary-button : #1e90ff ;
     --secondary-buttton : #263238;
     --logo-blue : #085CFF;
+    --link-color : #36D1DC;
     
 }
 
@@ -28,6 +30,7 @@ header{
 }
 
 header nav{
+    padding: 20px 0;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -48,9 +51,13 @@ header nav ul li{
 }
 nav ul li a {
     text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: var(--link-color);
 }
     
-nav button{
+button{
     position: relative;
     border: none;
     outline: none;
@@ -61,29 +68,148 @@ nav button{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 6rem;
+    min-width: 6rem;
     font-size: 1rem;
-    padding: 7px 10px;
+    padding: 7px 10px 7px 12px;
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 0.5px;
     color: #fff;
+    word-wrap: none;
   }
 
-nav button:hover {
+button:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;
   }
 
-nav button i{
+button i{
     color: #fff;
     position: absolute;
-    top: 25%;
+    font-size: 0.7rem;
+    top: 55%;
+    transform: translateY(-50%);
     right: 12%;
 }
-nav button :hover{
-    right: 9%;
+.btn:hover>i{
+    right: 10%;
 }
- 
+
+
+
+
+
+
+/* ..................................About Section.......................... */
+
+section{
+    display: block;
+    height: 90vh;
+    width: 85%;
+    margin: 0 auto;
+}
+/*............................SECTION-1......................................*/
+.sec-1 , .sec-2 , .sec-3 , .sec-4{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+}
+
+.left-box{
+
+    grid-area: left;
+    position: relative;
+}
+.left-box h1{
+    display: block;
+    background-color: #fff;
+    width: 500px;
+    height: 50%;
+    margin: 100px 70px 0 70px;
+    float: left;
+    font-size: 3.7rem;
+}
+.left-box span {
+    display: block;
+    width: 100px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-250%);
+}
+
+.right-box{
+    grid-area: right;
+    position: relative;
+
+}
+.right-box img , .left-box img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/*............................SECTION-2......................................*/
+
+
+.sec-2{
+    background-color: #FFB74D;
+    position: relative;
+}
+.goal-1{
+   position:absolute;
+    top:5%;
+    left: 10%;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+    
+}
+.goal-2{
+    position:absolute;
+    top:33%;
+    left: 10%;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+}
+.goal-3{
+    position:absolute;
+    bottom : 15%;
+    left: 10%;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+}
+
+.goal-img1{
+    position: absolute;
+    right: 10%;
+    top:5%;
+    height:70px;
+    width:120px;
+}
+
+.goal-img2{
+    position: absolute;
+    right: 10%;
+    top:40%;
+    height:70px;
+    width:120px;
+}
+
+.goal-img3{
+    position: absolute;
+    right: 10%;
+    bottom : 15%;
+    height:70px;
+    width:120px;
+}
+
+.sec-3{
+    background-color: #80DEEA;
+}
+
 

@@ -1,0 +1,43 @@
+.contact form{
+    position: absolute;
+    display: block;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 20px 0;
+}
+.contact form h2{
+    display: block;
+    width: 80%;
+    margin: 20px auto 5px auto; 
+}
+
+.contact form input{
+    padding: 10px;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: 4px ;
+    transition: 0.3s;
+}
+.contact form textarea {
+    padding: 10px;
+    display: block;
+    width: 80%;
+    height: 150px;
+    margin: 0 auto;
+    resize: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.contact form input:focus , .contact form textarea:focus{
+    outline: none;
+    box-shadow: 0 0 5px 2px dodgerblue;
+}
+.contact form button{
+    float: left;
+    margin: 20px 50px;
+}
