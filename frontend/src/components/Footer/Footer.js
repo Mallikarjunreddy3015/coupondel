@@ -17,6 +17,7 @@ const Footer = () => {
               <li><a href="#"><i class="fi fi-brands-twitter"></i></a></li>
             </div>
             <div className="footer-col">
+            
             <ul>
               <li><a href="#">about us</a></li>
               <li><a href="#">Partners</a></li>
