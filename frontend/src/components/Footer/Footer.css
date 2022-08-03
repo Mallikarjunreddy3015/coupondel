@@ -1,41 +1,84 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
 .footer-container{
-    background-color: rgba(84, 84, 84, 1);
+    background-color: #24262b;
     height: 300px;
+    text-transform: capitalize;
 }
 .footer-main{
-    width: 95%;
-    display: inline-block;
-    
+    width: 90%;
+    display: block;
+    margin: auto;
 }
 .footer-main img{
-  width: 10rem;
-  display: inline-block;
-}
-.footer-main ul{
-    width: 20%;
-    display: inline-block;
+  width: 160px;
+  display: block;
 }
 .footer-links{
-    width: 80%;
-    float: right;
+    display: flex;
+    width: 100%;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
+.footer-col{
+    width: 20%;
+    display: inline;
+}
+
+
+
 .footer-links a{
-    color: white;
+    color: #bbbbbb;
     text-decoration: none;
+    transition: all 0.3s ease;
+    padding-left: 5px;
 }
 .footer-main li{
-    text-align: center;
     list-style: none;
-    color: white;
-    font-size: large;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 .footer-copy{
     background-color:rgba(52, 52, 52, 1) ;
-    line-height: 4rem;
+    line-height: 48px;
     width: 100%;
     text-align: center;
 }
-.footer-copy p{
+.footer-container li:hover,.footer-container li:hover>a{
+    transform: translateX(5px);
     color: white;
+}
+.footer-copy p{
+    color:white;
+}
+.social-Media{
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-Media li{
+      display: inline;
+      word-wrap: normal;
+}
+.social-Media i{
+   font-size: 40px;
+   margin: 3px;
+}
+.social-Media i:hover{
+    transition: all 0.3s ease;
+    color: white;
+}
+@media  screen and (max-width:500px){   
+    .footer-container{
+        display: block;
+        overflow: none;
+        height: max-content;
+    }
+    .footer-main{
+        background-color: #24262b;
+    }
+    .footer-col{
+      width: 100%;
+    }
+    .footer-col li{
+        border-bottom: 2px solid #2b2a2a;
+    }
 }
