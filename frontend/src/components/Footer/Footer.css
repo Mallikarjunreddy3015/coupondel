@@ -8,13 +8,12 @@
     width: 90%;
     display: block;
     margin: auto;
-    padding-top: 48px;
+
 }
 .footer-main img{
   width: 160px;
   display: block;
-  align-self: center;
- padding-bottom: 32px;
+
 }
 .footer-links{
     display: flex;
@@ -59,7 +58,7 @@
       word-wrap: normal;
 }
 .social-Media i{
-   font-size: 24px;
+
    margin: 3px;
 }
 .social-Media i:hover{
@@ -81,15 +80,4 @@
     .footer-col li{
         border-bottom: 2px solid #2b2a2a;
     }
-}
-.footer-container .back-top{
-    position: absolute;
-    right: 40px;
-    width: 40px;
-}
-.footer-container span{
-    color: white;
-    font-size: 40px;
-    border: 2px solid white;
-    border-radius: 50%;
-}
+
