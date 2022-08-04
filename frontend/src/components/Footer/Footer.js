@@ -7,10 +7,8 @@ const Footer = () => {
     <>
       <div className="footer-container">
         <div className="footer-main">
-        <img src={icon} alt="icon" />
-          <div className="footer-links">
-
-          </div>
+          <img src={icon} alt="icon" />
+          <div className="footer-links"></div>
         </div>
         <div className="back-top">
           <a href="#header">
