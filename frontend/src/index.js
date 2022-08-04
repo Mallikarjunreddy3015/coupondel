@@ -6,3 +6,4 @@ import "../public/script";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
+

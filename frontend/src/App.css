@@ -8,6 +8,7 @@
     --secondary-buttton : #263238;
     --logo-blue : #085CFF;
     --link-color : #36D1DC;
+    --illustration-color : #FF725E;
     
 }
 
@@ -17,6 +18,7 @@
     box-sizing: border-box;
     color: rgb(85, 85, 82);
     font-family: 'Mulish', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -105,7 +107,7 @@ button i{
 
 section{
     display: block;
-    height: 90vh;
+    height: 100vh;
     width: 85%;
     margin: 0 auto;
 }
@@ -116,22 +118,23 @@ section{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "left right";
 }
+.sec-1{
+    height: 90vh;
+}
 
 .left-box{
-
     grid-area: left;
     position: relative;
 }
 .left-box h1{
     display: block;
-    background-color: #fff;
     width: 500px;
     height: 50%;
     margin: 100px 70px 0 70px;
     float: left;
     font-size: 3.7rem;
 }
-.left-box span {
+.sec-1 .left-box span {
     display: block;
     width: 100px;
     position: absolute;
@@ -208,8 +211,76 @@ section{
     width:120px;
 }
 
+/*...............................SECTION - 3 ..........................*/
+
 .sec-3{
-    background-color: #80DEEA;
+    height: 100vh;
+}
+.sec-3 .left-box{
+    background-color: transparent;
+}
+.sec-3 .left-box h1{
+    display: block;
+    margin-top: 160px;
+    width: 50%;
+    height: auto;
+    font-size: 3.7rem;
+}
+.sec-3 .left-box p{
+    display: inline-block;
+    width: 50%;
+    margin: 40px auto 0px 70px;
+    font-size: 1.3rem;
+}
+.sec-3 .left-box p span{
+    color: #36D1DC;
+}
+.sec-3 .right-box{
+    position: relative;
+}
+.sec-3 .right-box .brand-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.sec-3 .right-box img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 10px 40px;
+    
 }
 
 
+/*................................SECTION - 4 .......................................*/
+
+.sec-4{
+    height: 100vh;
+}
+.sec-4 .left-box img{
+    display: block;
+    height: 60%;
+    width: 70%;
+    margin: 0 auto;
+}
+.sec-4 .left-box h1{
+    width: auto;
+    height: auto;
+}
+
+
+
+/*...............................SECTION 5..............................*/
+
+.sec-5{
+    height: 80vh;
+    background-color:#FFB74D;
+}

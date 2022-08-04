@@ -1,8 +1,15 @@
 import React from "react";
+//import Team from "./Team.js";
 import firstImage from "../../Images/Ecommerce campaign-pana.png";
-import contactImage from "../../Images/Contact us-amico.png";
+import contactImage from "../../Images/Contact us-bro.png";
 import Button from "../Button";
 import Contact from ".././Contact/Contact.js";
+import amazon from "../../Images/brand/amazon-2.svg";
+import flipkart from "../../Images/brand/flipkart.svg";
+import myntra from "../../Images/brand/myntra.svg";
+import udemy from "../../Images/brand/udemy-wordmark-1.svg";
+import ajio from "../../Images/brand/ajio.svg";
+import adidas from "../../Images/brand/adidas-9.svg";
 
 function About() {
   return (
@@ -21,7 +28,7 @@ function About() {
         </div>
       </section>
 
-      <section className="sec-2">
+      <section className="sec-2" id="products">
         <div className="goals">
           <h3 className="goal-1">
             Shop form your favorite Ecommerce websites through coupondel.com and
@@ -55,13 +62,32 @@ function About() {
         </div>
       </section>
 
-      <section className="sec-3">
-        <div className="left-box"></div>
-        <div className="right-box"></div>
+      <section className="sec-3" id="about">
+        <div className="left-box">
+          <h1>All Your Favorites in One Place</h1>
+          <p>
+            Spend in your all favorite sites through us and save more.
+            All popular brands showing here and more will available here.
+            Just wait, <span>We are coming soon.</span>
+          </p>
+        </div>
+        <div className="right-box">
+          <div className="brand-box">
+            <img src={amazon} draggable="false" alt="amazon" />
+            <img src={flipkart} draggable="false" alt="flipkart" />
+            <img src={ajio} draggable="false" alt="ajio" />
+            <img src={myntra} draggable="false" alt="myntra" />
+            <img src={adidas} draggable="false" alt="adidas" />
+            <img src={udemy} draggable="false" alt="udemy" />
+          </div>
+        </div>
       </section>
 
-      <section className="sec-4">
+      <section className="sec-5" id="team"></section>
+
+      <section className="sec-4" id="contact">
         <div className="left-box">
+          <h1>Contact</h1>
           <img src={contactImage} draggable="false" alt="contact" />
         </div>
         <div className="right-box">
