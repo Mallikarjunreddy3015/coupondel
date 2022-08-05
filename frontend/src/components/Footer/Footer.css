@@ -14,7 +14,7 @@
 .footer-main img{
   width: 160px;
   display: block;
-  
+
 
 }
 .footer-links{
@@ -84,10 +84,10 @@
     }
 
 }
-.footer-container span{
+/* .footer-container span{
     font-size: 48px;
     border: 2px solid white;
     color: white;
     border-radius: 50% ;
     position: absolute;
-}
+} */
