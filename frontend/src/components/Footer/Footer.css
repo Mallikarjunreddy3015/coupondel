@@ -8,11 +8,13 @@
     width: 90%;
     display: block;
     margin: auto;
+    padding-top: 20px;
 
 }
 .footer-main img{
   width: 160px;
   display: block;
+  
 
 }
 .footer-links{
@@ -81,4 +83,11 @@
         border-bottom: 2px solid #2b2a2a;
     }
 
+}
+.footer-container span{
+    font-size: 48px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50% ;
+    position: absolute;
 }
