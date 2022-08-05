@@ -1,44 +1,34 @@
-import React, {useState,useRef}  from "react";
+import React, { useState, useRef } from "react";
 import "./Contact.css";
 import Button from "../Button";
-/*
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzWO5BhvQCIl3BKBme2IgxfdQhupCrFeOi_WOl7ProkdA7wHbtlS8pNO7j7TFlcL0g-FA/exec'
-        const form = document.forms['google-sheet']
-        if(form){
-           form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Contact message sent successfully.</div>"))
-            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Contact message not sent.</div>"))
-        })
-
-        }
-       
-*/
+import swal from 'sweetalert';
 
 const Contact = () => {
+
   const formRef = useRef(null)
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbzWO5BhvQCIl3BKBme2IgxfdQhupCrFeOi_WOl7ProkdA7wHbtlS8pNO7j7TFlcL0g-FA/exec"
-    const [loading, setLoading] = useState(false)
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbzWO5BhvQCIl3BKBme2IgxfdQhupCrFeOi_WOl7ProkdA7wHbtlS8pNO7j7TFlcL0g-FA/exec"
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    
 
-    const handleSubmit = (e) =>{
-        e.preventDefault()
-        setLoading(true)
-
-        fetch(scriptUrl, {
-        method: 'POST', 
-        body: new FormData(formRef.current),
+    fetch(scriptUrl, {
+      method: 'POST',
+      body: new FormData(formRef.current),
 
     }).then(res => {
-            console.log("SUCCESSFULLY SUBMITTED")
-           alert("succesfully submitted")
-        })
-        .catch(err => console.log(err))
-    }
+
+      swal(`Thank you ${e.target.name.value}`, "We will contact you soon!")
+        .then(res => {
+          window.location.reload()
+        });
+        
+    })
+      .catch(err => console.log(err))
+  }
   return (
     <>
       <div className="contact">
-        <form name="google-sheet" ref={formRef} onSubmit={handleSubmit}  className="form" autoComplete="on">
+        <form name="google-sheet" ref={formRef} onSubmit={handleSubmit} className="form" autoComplete="on">
           <h2>Name</h2>
           <input
             type="text"
@@ -61,7 +51,7 @@ const Contact = () => {
             rows="10"
             placeholder="Type your message"
           ></textarea>
-          <Button name={"Submit"} type="submit"  />
+          <Button name={"Submit"} type="submit" />
         </form>
       </div>
     </>
