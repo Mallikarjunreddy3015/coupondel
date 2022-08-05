@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
             <div className="footer-col">
               <ul>
-                <li>importent links</li>
+                <li><a>important links</a></li>
                 <li>
                   <a href="#">explore amazone</a>
                 </li>
