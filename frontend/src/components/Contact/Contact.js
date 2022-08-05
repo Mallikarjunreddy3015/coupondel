@@ -60,6 +60,7 @@ const Contact = () => {
             id="message"
             rows="10"
             placeholder="Type your message"
+            required
           ></textarea>
           <Button name={"Submit"} type="submit"  />
         </form>
