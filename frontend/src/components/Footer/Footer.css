@@ -1,6 +1,7 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
 .footer-container{
     background-color: #24262b;
+    background-color: rgb(10,21,53);
     height: 300px;
     text-transform: capitalize;
 }
@@ -90,9 +91,14 @@
     right: 20px;
 }
 .footer-container span{
-    font-size: 48px;
+    font-size: 40px;
     border: 2px solid white;
     color: white;
     border-radius: 50% ;
-   
+   transition: all 0.3s ease;
+}
+.footer-container span:hover{
+    transform: rotate(359deg);
+    background-color: white;
+    color: rgb(10,21,53);
 }
