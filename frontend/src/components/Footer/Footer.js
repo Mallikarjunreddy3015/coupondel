@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer-container">
-        <div className="footer-main">
+        <div className="row">
           <div className="footer-links">
             <div className="social-Media footer-col">
               <div>
@@ -50,40 +50,14 @@ const Footer = () => {
             <div className="footer-col">
               <ul>
                 <li>
-                  <a href="#">Contact</a>
-                </li>
-                <li>
-                  <a href="#">email</a>
-                </li>
-                <li>
-                  <a href="#">phone</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-col">
-              <ul>
-                <li>
                   <a href="#">Policy</a>
                 </li>
                 <li>
                   <a href="#">How to use</a>
                 </li>
-                <li>
-                  <a href="#">some more</a>
-                </li>
               </ul>
             </div>
-            <div className="footer-col">
-              <ul>
-                <li><a>important links</a></li>
-                <li>
-                  <a href="#">explore amazone</a>
-                </li>
-                <li>
-                  <a href="#">extra discount</a>
-                </li>
-              </ul>
-            </div>
+
           </div>
         </div>
         <div className="back-top">
@@ -91,9 +65,22 @@ const Footer = () => {
             <span className="material-symbols-outlined">expand_less</span>
           </a>
         </div>
+        <div className="row">
+        <div className="footer-col">
+        <div className="address">
+           <h4><span class="material-symbols-outlined">location_on</span>Find Us At</h4>
+           <p>IoT Lab TIDES Business Incubator, Indian Institute of Technology Roorkee, Roorkee, Uttarakhand - 247667</p>
+        </div></div>
+         <div className="footer-col">
+         <div className="mailPhone">
+        <span className="material-symbols-outlined">mail</span> <a href="mailto:admin@coupondel.com">admin@coupondel.com</a>
+        <a href="tel:+91 8688198923"><span className="material-symbols-outlined">phone</span>8688198923</a>
+         </div>
+         </div>
+        </div>
       </div>
-      <div className="footer-copy">
-        <p>&copy;CouponDel {year} All rights Reserved</p>
+      <div className="footer-copy ">
+        <p>&copy;Coupondel {year} All rights Reserved</p>
       </div>
     </>
   );
