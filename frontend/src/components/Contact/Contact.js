@@ -1,4 +1,4 @@
-import React, {useState,useRef}  from "react";
+import React, { useState, useRef } from "react";
 import "./Contact.css";
 import Button from "../Button";
 /*
@@ -17,34 +17,42 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzWO5BhvQCIl3BKBme2Ig
 */
 
 const Contact = () => {
-  const formRef = useRef(null)
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbzWO5BhvQCIl3BKBme2IgxfdQhupCrFeOi_WOl7ProkdA7wHbtlS8pNO7j7TFlcL0g-FA/exec"
-    const [loading, setLoading] = useState(false)
+  const formRef = useRef(null);
+  const scriptUrl =
+    "https://script.google.com/macros/s/AKfycbzWO5BhvQCIl3BKBme2IgxfdQhupCrFeOi_WOl7ProkdA7wHbtlS8pNO7j7TFlcL0g-FA/exec";
+  const [loading, setLoading] = useState(false);
 
-    const handleSubmit = (e) =>{
-        e.preventDefault()
-        setLoading(true)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-        fetch(scriptUrl, {
-        method: 'POST', 
-        body: new FormData(formRef.current),
-
-    }).then(res => {
-            console.log("SUCCESSFULLY SUBMITTED")
-           alert("succesfully submitted")
-        })
-        .catch(err => console.log(err))
-    }
+    fetch(scriptUrl, {
+      method: "POST",
+      body: new FormData(formRef.current),
+    })
+      .then((res) => {
+        console.log("SUCCESSFULLY SUBMITTED");
+        alert("succesfully submitted");
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <>
       <div className="contact">
-        <form name="google-sheet" ref={formRef} onSubmit={handleSubmit}  className="form" autoComplete="on">
+        <form
+          name="google-sheet"
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="form"
+          autoComplete="on"
+        >
           <h2>Name</h2>
           <input
             type="text"
             id="name"
             placeholder="Enter your name"
             name="name"
+            required
           />
           <h2>Your Email</h2>
           <input
@@ -62,7 +70,7 @@ const Contact = () => {
             placeholder="Type your message"
             required
           ></textarea>
-          <Button name={"Submit"} type="submit"  />
+          <Button name={"Submit"} type="submit" />
         </form>
       </div>
     </>
