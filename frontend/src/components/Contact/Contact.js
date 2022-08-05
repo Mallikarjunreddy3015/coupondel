@@ -42,7 +42,7 @@ const Contact = () => {
             id="email"
             placeholder="Enter your email"
             name="email"
-            required
+            required="true"
           />
           <h2>Message</h2>
           <textarea
