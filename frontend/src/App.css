@@ -144,6 +144,7 @@ section{
     flex-direction: column;
 }
 .left-box h1{
+    word-wrap: break-word;
     display: block;
     max-width: 31.35rem;
     max-height: 50%;
@@ -155,7 +156,7 @@ section{
     display: inline-block;
     width: 95px;
     margin-left: 70px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .right-box{
@@ -190,7 +191,7 @@ section{
 }
 .sec-2 .box{
     background-color: var(--card-color);
-    width: 23%;
+    width: 25%;
     height: 70vh;
     margin: auto;
     margin-bottom: 90px;
@@ -207,7 +208,7 @@ section{
     height: 180px;
     width: 180px;
     padding: 30px;
-    background-color: yellow;
+    background-color: rgb(121, 237, 255);
     border-radius: 50%;
     margin: 30px auto;
 }
@@ -269,7 +270,6 @@ section{
     width: 150px;
     height: 150px;
     margin: 10px 40px;
-    
 }
 
 
@@ -350,6 +350,19 @@ section{
     justify-content: space-between;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----------------responsive--------------------- */
 .menu-bar{
     display: inline;
@@ -364,7 +377,64 @@ section{
      height: 30px;
      display: none;
   }
-  @media only screen and (max-width: 600px) {
+
+  @media only screen and (max-width: 1203px){
+    .sec-1 h1{
+       background-color: aqua;
+       font-size: 3.7rem;
+    }
+    .sec-3 .right-box img{
+        margin: 10px 15px;
+    }
+    .sec-3 .left-box h1{
+        background-color: aqua;
+        font-size: 3rem;
+    }
+    .sec-3 .left-box p{
+        font-size: 1.2rem;
+    }
+    
+  }
+
+@media only screen and (max-width: 1130px) {
+    .sec-1 h1{
+        margin-top: 90px;
+        color: #085CFF;
+        font-size: 3.3rem;
+    }
+    .sec-1 img{
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .sec-3 .right-box{
+        background-color: #FF725E;
+    }
+    .sec-3 .right-box img{
+        margin: 10px;
+    }
+    .sec-3 .left-box h1{
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width: 960px){
+    .sec-1 h1{
+        color: #000;
+        font-size: 2.5rem;
+    }
+    .sec-3 h1{
+        font-size: 1rem;
+    }
+    .sec-3 .right-box{
+        background-color: #36D1DC;
+    }
+    .sec-3 .right-box img{
+        margin: 0;
+        scale: 0.6;
+    }
+}
+
+
+  @media only screen and (max-width: 800px) {
     .menu-bar, header .menu-bar .open{
         display: block;
     }
