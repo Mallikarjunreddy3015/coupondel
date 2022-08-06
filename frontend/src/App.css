@@ -343,4 +343,51 @@ section{
     justify-content: space-between;
 }
 
+/* -----------------responsive--------------------- */
+.menu-bar{
+    display: inline;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    display: none;
+    cursor: pointer;
+  }
+  header  .menu-bar .open ,header .menu-bar .close{
+    position: absolute;
+     height: 30px;
+     display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .menu-bar, header .menu-bar .open{
+        display: block;
+    }
+    header nav ul{
+        display: block;
+        overflow: hidden;
+        line-height: 1;
+        height: 100%;    
+        border-radius: 5px;
+        background-color: #fff ;
+        position: fixed;width: 0px;
+    }
+    header ul.active{
+        width: 100%;
+        height: 100%;
+    }
+    ul li{
+        display: block;
+        font-size: 25px;
+        border-radius: 5px;
+        text-align: left;
+    }
+    header .menu-bar.\.active .open, header .menu-bar .close{
+      display: none;
+  }
+  header .menu-bar.\.active .close, header .menu-bar .open{
+      display: block;
+  }
+  button {
+    display: none;
+  }
+  }
 
