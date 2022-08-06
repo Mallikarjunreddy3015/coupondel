@@ -1,5 +1,4 @@
 import React from "react";
-//import Team from "./Team.js";
 import firstImage from "../../Images/Ecommerce campaign-pana.png";
 import contactImage from "../../Images/Contact us-bro.png";
 import Button from "../Button";
@@ -14,6 +13,7 @@ import shopping from "../../Images/products/shopping.svg";
 import coupon from "../../Images/products/coupons.svg";
 import refer from "../../Images/products/refer.svg";
 import userdp from "../../Images/team/user.png";
+
 
 function About() {
   return (
@@ -86,8 +86,25 @@ function About() {
         <div className="card-box">
           <div className="card">
             <img src={userdp} alt="dp" />
-            <h4>Subhadip Mandal</h4>
-            <p>Developer, Designer</p>
+            <h4>Mallikarjun</h4>
+            <p>Developer</p>
+            <div className="social">
+              <a href="#">
+                <i class="fi fi-brands-instagram"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-linkedin"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={userdp} alt="dp" />
+            <h4>Rajkumar</h4>
+            <p>Finance & Marketing</p>
             <div className="social">
               <a href="#">
                 <i class="fi fi-brands-instagram"></i>
@@ -120,24 +137,7 @@ function About() {
 
           <div className="card">
             <img src={userdp} alt="dp" />
-            <h4>Subhadip Mandal</h4>
-            <p>Developer, Designer</p>
-            <div className="social">
-              <a href="#">
-                <i class="fi fi-brands-instagram"></i>
-              </a>
-              <a href="#">
-              <i class="fi fi-brands-linkedin"></i>
-              </a>
-              <a href="#">
-              <i class="fi fi-brands-twitter"></i>
-              </a>
-            </div>
-          </div>
-
-          <div className="card">
-            <img src={userdp} alt="dp" />
-            <h4>Subhadip Mandal</h4>
+            <h4>Deepak</h4>
             <p>Developer, Designer</p>
             <div className="social">
               <a href="#">

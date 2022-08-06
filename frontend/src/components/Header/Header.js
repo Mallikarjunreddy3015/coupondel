@@ -14,8 +14,17 @@ function Header() {
     <>
       <header id="header">
         <nav>
+        <div className="logo">
           <img src={logo} alt="logo" />
-          <ul id="menuUl">
+        </div>
+          
+          <div className="menuUl" id="menuUl">
+          <div id="menu" className="menu-bar " onClick={activemenu} onBlur={activemenu}>
+        <span class="open material-symbols-outlined">menu</span>
+        <span class="close material-symbols-outlined">close</span>
+        
+        </div>
+                <ul >
             <li>
               {" "}
               <a href="#products">Products</a>{" "}
@@ -34,6 +43,8 @@ function Header() {
             </li>
           </ul>
           <Button name={"Sign in"} type={"button"} />
+          </div>
+      
           
         </nav>
         <div id="menu" className="menu-bar " onClick={activemenu} onBlur={activemenu}>
