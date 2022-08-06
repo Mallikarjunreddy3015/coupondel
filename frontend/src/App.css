@@ -133,24 +133,22 @@ section{
 
 .left-box{
     grid-area: left;
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .left-box h1{
     display: block;
-    width: 500px;
-    height: 50%;
+    max-width: 31.35rem;
+    max-height: 50%;
     margin: 150px 70px 0 70px;
     float: left;
     font-size: 4.35rem;
 }
-.sec-1 .left-box span {
-    display: block;
-    width: 100px;
-    position: absolute;
-    bottom: 150px;
-    
-    left: 50%;
-    transform: translateX(-250%);
+.sec-1 .left-box span{
+    display: inline-block;
+    width: 95px;
+    margin-left: 70px;
+    margin-top: 50px;
 }
 
 .right-box{
@@ -347,8 +345,6 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-
-
 
 /* -----------------responsive--------------------- */
 .menu-bar{
