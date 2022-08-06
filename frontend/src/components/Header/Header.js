@@ -16,10 +16,11 @@ function Header() {
         <nav>
         <div className="logo">
           <img src={logo} alt="logo" />
+          <siv id="blur" className="blur"></siv>
         </div>
           
           <div className="menuUl" id="menuUl">
-          <div id="menu" className="menu-bar " onClick={activemenu} onBlur={activemenu}>
+          <div id="menu" className="menu-bar " onClick={activemenu} >
         <span class="open material-symbols-outlined">menu</span>
         <span class="close material-symbols-outlined">close</span>
         

@@ -71,7 +71,7 @@ setLoading("2");
 
           {loading =="3" ?  <Backdrop className={classes.backdrop} open>
             <CircularProgress color="inherit" />
-          </Backdrop>:loading}
+          </Backdrop>:""}
 
         </form>
       </div>
