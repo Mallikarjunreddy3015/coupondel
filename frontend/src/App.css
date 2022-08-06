@@ -189,9 +189,6 @@ section{
     margin-bottom: 90px;
     transition: 0.25s;
 }
-/* .sec-2 .box:hover{
-    transform: scale(1.05);
-} */
 
 .sec-2 .box:hover{
     transform: scale(1.05);
