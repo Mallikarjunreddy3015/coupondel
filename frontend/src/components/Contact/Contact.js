@@ -42,7 +42,7 @@ const Contact = () => {
             id="email"
             placeholder="Enter your email"
             name="email"
-            required="true"
+            required
           />
           <h2>Message</h2>
           <textarea
@@ -50,6 +50,7 @@ const Contact = () => {
             id="message"
             rows="10"
             placeholder="Type your message"
+            required
           ></textarea>
           <Button name={"Submit"} type="submit" />
         </form>
