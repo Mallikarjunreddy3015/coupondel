@@ -18,7 +18,7 @@ const Contact = () => {
     }).then(res => {
 
       swal(`Thank you ${e.target.name.value}`, "We will contact you soon!")
-        .then(res => {
+        .then(()=> {
           window.location.reload()
         });
         
@@ -35,6 +35,7 @@ const Contact = () => {
             id="name"
             placeholder="Enter your name"
             name="name"
+            required
           />
           <h2>Your Email</h2>
           <input
@@ -42,7 +43,7 @@ const Contact = () => {
             id="email"
             placeholder="Enter your email"
             name="email"
-            required="true"
+            required
           />
           <h2>Message</h2>
           <textarea
@@ -50,6 +51,7 @@ const Contact = () => {
             id="message"
             rows="10"
             placeholder="Type your message"
+            required
           ></textarea>
           <Button name={"Submit"} type="submit" />
         </form>

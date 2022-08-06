@@ -10,14 +10,18 @@ import myntra from "../../Images/brand/myntra.svg";
 import udemy from "../../Images/brand/udemy-wordmark-1.svg";
 import ajio from "../../Images/brand/ajio.svg";
 import adidas from "../../Images/brand/adidas-9.svg";
+import shopping from "../../Images/products/shopping.svg";
+import coupon from "../../Images/products/coupons.svg";
+import refer from "../../Images/products/refer.svg";
+import userdp from "../../Images/team/user.png";
 
 function About() {
   return (
     <>
       <section className="sec-1">
         <div className="left-box">
-          <h1>
-            A platform for Easiest and instant Savings via Cashbacks and Coupons
+          <h1 className="noselect">
+            A platform for Easiest and instant Savings
           </h1>
           <span>
             <Button name={"Explore"} />
@@ -29,46 +33,40 @@ function About() {
       </section>
 
       <section className="sec-2" id="products">
-        <div className="goals">
-          <h3 className="goal-1">
+      <h1>Products</h1>
+        <div className="box">
+          <img src={shopping} alt="shopping" draggable="false" />
+          <h3>While Shopping</h3>
+          <p>
             Shop form your favorite Ecommerce websites through coupondel.com and
             earn extra cashbacks.
-          </h3>
-          <img className="goal-img1" src="#" alt="img1" />
+          </p>
         </div>
-
-        <div>
-          <h3 className="goal-2">
+        <div className="box">
+          <img src={coupon} alt="coupon" draggable="false" />
+          <h3>Coupons hi coupons</h3>
+          <p>
             Share your unused coupons from Paytm,Phonepe,zomato etc.. and use
             coupons shared by fellow customers.
-          </h3>
-          <img
-            className="goal-img2"
-            src="https://d2kh7o38xye1vj.cloudfront.net/wp-content/uploads/2021/06/coupon-banner-graphic.png"
-            alt="img2"
-          />
+          </p>
         </div>
-
-        <div>
-          <h3 className="goal-3">
+        <div className="box">
+          <img src={refer} alt="refer" draggable="false" />
+          <h3>Invitation</h3>
+          <p>
             Share our referal links of other apps and get the referal amount in
             your account when your friends signup with those links.
-          </h3>
-          <img
-            className="goal-img3"
-            src="https://hello.pricelabs.co/wp-content/uploads/2021/04/refer-3-1024x658.png"
-            alt="img3"
-          />
+          </p>
         </div>
       </section>
 
-      <section className="sec-3" id="about">
+      <section className="sec-3" id="partners">
         <div className="left-box">
           <h1>All Your Favorites in One Place</h1>
           <p>
-            Spend in your all favorite sites through us and save more.
-            All popular brands showing here and more will available here.
-            Just wait, <span>We are coming soon.</span>
+            Spend in your all favorite sites through us and save more. All
+            popular brands showing here and more will be available here. Just
+            wait, <span>We are coming soon.</span>
           </p>
         </div>
         <div className="right-box">
@@ -83,7 +81,82 @@ function About() {
         </div>
       </section>
 
-      <section className="sec-5" id="team"></section>
+      <section className="sec-5" id="team">
+        <h1>Our Team</h1>
+        <div className="card-box">
+          <div className="card">
+            <img src={userdp} alt="dp" />
+            <h4>Subhadip Mandal</h4>
+            <p>Developer, Designer</p>
+            <div className="social">
+              <a href="#">
+                <i class="fi fi-brands-instagram"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-linkedin"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={userdp} alt="dp" />
+            <h4>Subhadip Mandal</h4>
+            <p>Developer, Designer</p>
+            <div className="social">
+              <a href="#">
+                <i class="fi fi-brands-instagram"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-linkedin"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={userdp} alt="dp" />
+            <h4>Subhadip Mandal</h4>
+            <p>Developer, Designer</p>
+            <div className="social">
+              <a href="#">
+                <i class="fi fi-brands-instagram"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-linkedin"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={userdp} alt="dp" />
+            <h4>Subhadip Mandal</h4>
+            <p>Developer, Designer</p>
+            <div className="social">
+              <a href="#">
+                <i class="fi fi-brands-instagram"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-linkedin"></i>
+              </a>
+              <a href="#">
+              <i class="fi fi-brands-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
 
       <section className="sec-4" id="contact">
         <div className="left-box">

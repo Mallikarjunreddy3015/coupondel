@@ -9,6 +9,8 @@
     --logo-blue : #085CFF;
     --link-color : #36D1DC;
     --illustration-color : #FF725E;
+    --even-section-color : #f0f0f0;
+    --card-color:#ffff;
     
 }
 
@@ -20,6 +22,13 @@
     font-family: 'Mulish', sans-serif;
     scroll-behavior: smooth;
 
+}
+
+.noselect{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* ........................Header styles........................ */
@@ -130,15 +139,16 @@ section{
     display: block;
     width: 500px;
     height: 50%;
-    margin: 100px 70px 0 70px;
+    margin: 150px 70px 0 70px;
     float: left;
-    font-size: 3.7rem;
+    font-size: 4.35rem;
 }
 .sec-1 .left-box span {
     display: block;
     width: 100px;
     position: absolute;
-    bottom: 100px;
+    bottom: 150px;
+    
     left: 50%;
     transform: translateX(-250%);
 }
@@ -146,6 +156,7 @@ section{
 .right-box{
     grid-area: right;
     position: relative;
+    width: 100%;
 
 }
 .right-box img , .left-box img{
@@ -161,55 +172,54 @@ section{
 
 
 .sec-2{
-    background-color: #FFB74D;
+    background-color: var(--even-section-color);
+    display: flex;
     position: relative;
 }
-.goal-1{
-   position:absolute;
-    top:5%;
-    left: 10%;
-    inline-size: 300px;
-    overflow-wrap: break-word;
-    
+.sec-2 h1{
+    position: absolute;
+    font-size: 3.7rem;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
-.goal-2{
-    position:absolute;
-    top:33%;
-    left: 10%;
-    inline-size: 300px;
-    overflow-wrap: break-word;
+.sec-2 .box{
+    background-color: var(--card-color);
+    width: 23%;
+    height: 70vh;
+    margin: auto;
+    margin-bottom: 90px;
+    transition: 0.25s;
 }
-.goal-3{
-    position:absolute;
-    bottom : 15%;
-    left: 10%;
-    inline-size: 300px;
-    overflow-wrap: break-word;
+/* .sec-2 .box:hover{
+    transform: scale(1.05);
+} */
+
+.sec-2 .box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 2px rgb(195, 195, 195);
 }
 
-.goal-img1{
-    position: absolute;
-    right: 10%;
-    top:5%;
-    height:70px;
-    width:120px;
+.sec-2 .box img{
+    display: block;
+    height: 180px;
+    width: 180px;
+    padding: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+.sec-2 .box h3 {
+    text-align: center;
+}
+.sec-2 .box p {
+    display: inline-block;
+    width: 80%;
+    margin: 20px 30px;
+    text-align: center;
+    word-wrap: break-word;
 }
 
-.goal-img2{
-    position: absolute;
-    right: 10%;
-    top:40%;
-    height:70px;
-    width:120px;
-}
-
-.goal-img3{
-    position: absolute;
-    right: 10%;
-    bottom : 15%;
-    height:70px;
-    width:120px;
-}
 
 /*...............................SECTION - 3 ..........................*/
 
@@ -231,6 +241,7 @@ section{
     width: 50%;
     margin: 40px auto 0px 70px;
     font-size: 1.3rem;
+    overflow-wrap: break-word;
 }
 .sec-3 .left-box p span{
     color: #36D1DC;
@@ -272,6 +283,7 @@ section{
     margin: 0 auto;
 }
 .sec-4 .left-box h1{
+    margin-top: 120px;
     width: auto;
     height: auto;
 }
@@ -281,6 +293,58 @@ section{
 /*...............................SECTION 5..............................*/
 
 .sec-5{
-    height: 80vh;
-    background-color:#FFB74D;
+    height: 100vh;
+    background-color: var(--even-section-color);
+    position: relative;
 }
+
+.sec-5 h1{
+    display: block;
+    width: fit-content;
+    font-size: 3.7rem;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50% , -50%);
+}
+
+.sec-5 .card-box{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.sec-5 .card{
+    background-color: var(--card-color);
+    width: 23%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.sec-5 .card:hover{
+    box-shadow: 0 0 10px 2px rgb(195, 195, 195);
+}
+.sec-5 .card img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.card a{
+    text-decoration: none;
+    margin: 10px;
+}
+.card .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

@@ -15,7 +15,11 @@ function Header() {
             </li>
             <li>
               {" "}
-              <a href="#about">About</a>{" "}
+              <a href="#partners">Partners</a>{" "}
+            </li>
+            <li>
+              {" "}
+              <a href="#team">Team</a>{" "}
             </li>
             <li>
               {" "}
