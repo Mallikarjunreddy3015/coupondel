@@ -12,7 +12,7 @@ const Footer = () => {
               <div>
                 <img src={icon} draggable="false" alt="icon" />
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/coupondel/">
                     <i className="fi fi-brands-linkedin"></i>
                   </a>
                 </li>

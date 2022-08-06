@@ -196,9 +196,6 @@ section{
     margin-bottom: 90px;
     transition: 0.25s;
 }
-/* .sec-2 .box:hover{
-    transform: scale(1.05);
-} */
 
 .sec-2 .box:hover{
     transform: scale(1.05);
@@ -339,8 +336,8 @@ section{
 }
 .sec-5 .card img{
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     margin-bottom: 50px;
 }
 .card a{
