@@ -30,6 +30,17 @@
     -ms-user-select: none;
     user-select: none;
 }
+ .menuactive{
+    overflow: hidden;
+}
+.blurbody{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 1;
+    
+}
 
 /* ........................Header styles........................ */
 
@@ -38,7 +49,9 @@ header{
     width: 85%;
     margin: 0 auto;
     text-align: center;
+ 
 }
+
 
 header nav{
     padding: 20px 0;
@@ -458,7 +471,7 @@ section{
         top: 0px;
     }
     header .menuUl.active{
-        transition: all 0.2s ease;
+        transition: all 0.2s ease-in-out;
         width: 60%;
     }
     .menuUl button{
