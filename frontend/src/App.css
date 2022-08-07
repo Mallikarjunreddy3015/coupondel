@@ -424,8 +424,8 @@ section{
     .sec-2 .box img , .sec-5 img{
         transform: scale(0.8);
     }
-    .sec-3 h1{
-        font-size: 1rem;
+    .sec-3 .left-box h1{
+        font-size: 1.7rem;
     }
     .sec-3 .left-box p{
         font-size: 1rem;
