@@ -11,7 +11,6 @@ const activemenu=()=>{
   blurbody.classList.toggle('blurbody')
   let root = document.getElementById('body')
   root.classList.toggle('menuactive')
-
 }
 
 function Header() {
