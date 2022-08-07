@@ -387,6 +387,7 @@ section{
     right: 80px;
     display: none;
     cursor: pointer;
+    z-index: 2;
   }
   header  .menu-bar .open ,header .menu-bar .close{
     position: absolute;
@@ -508,7 +509,7 @@ section{
         header .menu-bar.\.active .open, header .menu-bar .close{
         display: none;
     }
-    header .menu-bar.\.active .close, header .menu-bar .open{
+    header .menu-bar .\.active .close, header .menu-bar .open{
         display: block;
     }
 

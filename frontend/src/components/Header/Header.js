@@ -26,11 +26,7 @@ function Header() {
           <div id="blur" className="blur"></div>
         </div>
           <div className="menuUl" id="menuUl">
-          <div id="menu" className="menu-bar " onClick={activemenu} >
-        <span className="open material-symbols-outlined">menu</span>
-        <span className="close material-symbols-outlined">close</span>
         
-        </div>
                 <ul >
             <li onClick={activemenu}>
               {" "}
@@ -52,7 +48,7 @@ function Header() {
           <Button name={"Sign in"} type={"button"} />
           </div>
         </nav>
-        <div id="menu" className="menu-bar " onClick={activemenu} onBlur={activemenu}>
+        <div id="menu" className="menu-bar" onClick={activemenu} onBlur={activemenu}>
         <span className="open material-symbols-outlined">menu</span>
         <span className="close material-symbols-outlined">close</span>
         
