@@ -221,20 +221,23 @@ section{
 
 .sec-2 .box img{
     display: block;
-    height: 180px;
-    width: 180px;
+    max-height: 180px;
+    max-width: 180px;
     padding: 30px;
     background-color: rgb(121, 237, 255);
     border-radius: 50%;
     margin: 30px auto;
 }
+
+
 .sec-2 .box h3 {
     text-align: center;
+
 }
 .sec-2 .box p {
-    display: inline-block;
+    display: block;
     width: 80%;
-    margin: 20px 30px;
+    margin: 20px auto;
     text-align: center;
     word-wrap: break-word;
 }
@@ -433,6 +436,9 @@ section{
 @media only screen and (max-width: 960px){
     .sec-1 h1{
         font-size: 2.5rem;
+    }
+    .sec-2 img , h3 , p{
+        transform: scale(0.7);
     }
     .sec-3 h1{
         font-size: 1rem;

@@ -45,7 +45,7 @@ function About() {
           </p>
         </div>
         <div className="box">
-          <img src={coupon} alt="coupon" draggable="false" />
+          <img id="abnormal" src={coupon} alt="coupon" draggable="false" />
           <h3>Coupons hi coupons</h3>
           <p>
             Share your unused coupons of Paytm,Phonepe  etc.. and use
