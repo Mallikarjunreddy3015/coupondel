@@ -46,7 +46,7 @@ function About() {
           <img src={coupon} alt="coupon" draggable="false" />
           <h3>Coupons hi coupons</h3>
           <p>
-            Share your unused coupons from Paytm,Phonepe,zomato etc.. and use
+            Share your unused coupons of Paytm,Phonepe  etc.. and use
             coupons shared by fellow customers.
           </p>
         </div>
@@ -54,7 +54,7 @@ function About() {
           <img src={refer} alt="refer" draggable="false" />
           <h3>Invitation</h3>
           <p>
-            Share our referal links of other apps and get the referal amount in
+            Share our referral links of other apps and get the referal amount in
             your account when your friends signup with those links.
           </p>
         </div>
@@ -120,7 +120,7 @@ function About() {
 
           <div className="card">
             <img src={userdp} alt="dp" />
-            <h4>Subhadip Mandal</h4>
+            <h4>Subhadip</h4>
             <p>Developer, Designer</p>
             <div className="social">
               <a href="#">
