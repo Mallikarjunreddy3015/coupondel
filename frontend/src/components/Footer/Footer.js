@@ -12,23 +12,23 @@ const Footer = () => {
               <div>
                 <img src={icon} draggable="false" alt="icon" />
                 <li>
-                  <a href="https://www.linkedin.com/company/coupondel/">
+                  <a target='blank' href="https://www.linkedin.com/company/coupondel/">
                     <i className="fi fi-brands-linkedin"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://www.instagram.com/coupondel_official/">
+                  <a target='blank' href="https://www.instagram.com/coupondel_official/">
                     <i className="fi fi-brands-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a target='blank' href="#">
                     <i className="fi fi-brands-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/coupondel_" >
+                  <a target='blank' href="https://twitter.com/coupondel_">
                     <i className="fi fi-brands-twitter"></i>
                   </a>
                 </li>
