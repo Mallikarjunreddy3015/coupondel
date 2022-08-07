@@ -145,7 +145,7 @@ section{
     margin: 0 auto;
 }
 /*............................SECTION-1......................................*/
-.sec-1 , .sec-2 , .sec-3 , .sec-4{
+.sec-1  , .sec-3 , .sec-4{
     background-color: transparent;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,7 +164,6 @@ section{
     word-wrap: break-word;
     display: block;
     max-width: 31.35rem;
-    max-height: 50%;
     margin: 150px 70px 0 70px;
     float: left;
     font-size: 4.35rem;
@@ -397,7 +396,6 @@ section{
 
   @media only screen and (max-width: 1203px){
     .sec-1 h1{
-       background-color: aqua;
        font-size: 3.7rem;
     }
     .sec-3 .right-box img{
@@ -416,7 +414,6 @@ section{
 @media only screen and (max-width: 1130px) {
     .sec-1 h1{
         margin-top: 90px;
-        color: #085CFF;
         font-size: 3.3rem;
     }
     .sec-1 img{
@@ -435,7 +432,6 @@ section{
 }
 @media only screen and (max-width: 960px){
     .sec-1 h1{
-        color: #000;
         font-size: 2.5rem;
     }
     .sec-3 h1{
@@ -542,6 +538,29 @@ section{
         width: auto;
         height: auto;
         font-size: 1rem;
+    }
+    header{
+        width: 100%;
+
+    }
+    .logo img{
+        margin-left: 15px;
+    }
+    section{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .sec-1 h1{
+        margin: 40px 15px 5px 15px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .sec-1 .right-box img{
+        margin-top: -10px;
+        transform: none;
+        width: 100%;
+        height: 100%;
     }
   }
 
