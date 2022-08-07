@@ -28,7 +28,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://twitter.com/coupondel_">
                     <i className="fi fi-brands-twitter"></i>
                   </a>
                 </li>
