@@ -221,8 +221,8 @@ section{
 
 .sec-2 .box img{
     display: block;
-    height: 180px;
-    width: 180px;
+    max-height: 180px;
+    max-width: 180px;
     padding: 30px;
     background-color: rgb(121, 237, 255);
     border-radius: 50%;
@@ -297,7 +297,7 @@ section{
 .sec-4{
     height: 100vh;
 }
-.sec-4 .left-box img{
+.sec-4 .left-box img{ 
     display: block;
     height: 60%;
     width: 70%;
@@ -440,11 +440,15 @@ section{
     .sec-2 img , h3 , p{
         transform: scale(0.7);
     }
-    .sec-3 h1{
-        font-size: 1rem;
+    .sec-3 .left-box h1{
+        font-size: 2rem;
     }
     .sec-3 .right-box{
         background-color: #36D1DC;
+    }
+    .sec-3 .left-box p {
+        margin-top: 10px;
+        float: left;
     }
     .sec-3 .right-box img{
         margin: 0;
@@ -469,7 +473,7 @@ section{
 }
 
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 805px) {
         .menu-bar, header .menu-bar .open{
             display: block;
         }
@@ -534,6 +538,15 @@ section{
         margin-top: -50px;
         transform: scale(0.7);
     }
+    .sec-2 h1{
+        font-size: 3rem;
+    }
+    .sec-3 .right-box .brand-box img{
+        transform: scale(0.7);
+    }
+    .sec-5 .card-box .card img{
+        transform: scale(0.7);
+    }
   }
 
   @media only screen and (max-width: 500px) {
@@ -572,5 +585,6 @@ section{
     .sec-2 .box img{
         max-width: 100px;
     }
+    
   }
 
