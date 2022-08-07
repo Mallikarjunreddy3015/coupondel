@@ -480,6 +480,7 @@ section{
     }
     .menuUl button i{ 
  display: none;
+ 
     }
     .menuUl ul{
         display: block;
