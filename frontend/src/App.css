@@ -216,9 +216,9 @@ section{
     text-align: center;
 }
 .sec-2 .box p {
-    display: inline-block;
+    display: block;
     width: 80%;
-    margin: 20px 30px;
+    margin: 20px auto;
     text-align: center;
     word-wrap: break-word;
 }
@@ -417,11 +417,17 @@ section{
     }
 }
 @media only screen and (max-width: 960px){
-    .sec-1 h1{
+    .sec-1 h1 , .sec-2 h1{
         color: #000;
         font-size: 2.5rem;
     }
+    .sec-2 .box img , .sec-5 img{
+        transform: scale(0.8);
+    }
     .sec-3 h1{
+        font-size: 1rem;
+    }
+    .sec-3 .left-box p{
         font-size: 1rem;
     }
     .sec-3 .right-box{
@@ -431,60 +437,99 @@ section{
         margin: 0;
         scale: 0.6;
     }
+    .sec-4 .left-box h1{
+        font-size: 3rem;
+        margin-top: 70px;
+    }
+    
+    .sec-4 .left-box img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .sec-4 .right-box .contact .form{
+        top: 30%;
+        transform: scale(0.8) translate(-60% , -50%);
+        max-width: 400px;
+    }
+
 }
 
 
   @media only screen and (max-width: 800px) {
-    .menu-bar, header .menu-bar .open{
+        .menu-bar, header .menu-bar .open{
+            display: block;
+        }
+        header{
+            text-align: left;
+        }
+        header nav{
+            display: block;
+            padding: 5px;
+        }
+        header nav .menuUl{
+            display: block;
+            overflow: hidden;
+            height: 100%;
+            background-color: #fff ;
+            position: fixed;
+            right: 0px;
+            width: 0px;
+            text-align: center;
+            z-index: 1;
+            top: 0px;
+        }
+        header .menuUl.active{
+            transition: all 0.2s ease;
+            width: 60%;
+        }
+        .menuUl button{
+            display: block;
+            margin: auto;
+        }
+        .menuUl button i{ 
+    display: none;
+        }
+        .menuUl ul{
+            display: block;
+            margin: 40px auto 20px auto;
+        }
+        header ul li{
+            display: inline-block;
+            font-size: 16px;
+            width: 60%;
+
+            line-height: 2;
+            text-align: center;
+        }
+        header .menu-bar.\.active .open, header .menu-bar .close{
+        display: none;
+    }
+    header .menu-bar.\.active .close, header .menu-bar .open{
         display: block;
     }
-    header{
-        text-align: left;
+
+    .sec-1 {
+        display: flex;
+        flex-direction: column;
     }
-    header nav{
-        display: block;
-        padding: 5px;
+    .sec-1 .left-box span{
+        display: none;
     }
-    header nav .menuUl{
-        display: block;
-        overflow: hidden;
-        height: 100%;
-        background-color: #fff ;
-        position: fixed;
-        right: 0px;
-        width: 0px;
-        text-align: center;
-        z-index: 1;
-        top: 0px;
+    .sec-1 .right-box img{
+        margin-top: -50px;
+        transform: scale(0.7);
     }
-    header .menuUl.active{
-        transition: all 0.2s ease;
-        width: 60%;
-    }
-    .menuUl button{
+  }
+
+  @media only screen and (max-width: 500px) {
+    h1{
         display: block;
         margin: auto;
+        margin-top: -20px;
+        width: auto;
+        height: auto;
+        font-size: 1rem;
     }
-    .menuUl button i{ 
- display: none;
-    }
-    .menuUl ul{
-        display: block;
-        margin: 40px auto 20px auto;
-    }
-    header ul li{
-        display: inline-block;
-        font-size: 16px;
-        width: 60%;
-
-        line-height: 2;
-        text-align: center;
-    }
-    header .menu-bar.\.active .open, header .menu-bar .close{
-      display: none;
-  }
-  header .menu-bar.\.active .close, header .menu-bar .open{
-      display: block;
-  }
   }
 
