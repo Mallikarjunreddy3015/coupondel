@@ -14,6 +14,7 @@ module.exports = merge(common, {
       template: "./public/index.html"
     })
   ],
+  devtool: 'source-map',
   module: {
     rules: [
       {

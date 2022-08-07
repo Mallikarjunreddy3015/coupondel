@@ -42,3 +42,7 @@
     float: left;
     margin: 20px 50px;
 }
+
+.swal-wide{
+    width:80px !important;
+}

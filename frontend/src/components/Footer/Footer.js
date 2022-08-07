@@ -23,7 +23,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a target='blank' href="#">
+                  <a target='blank' href="https://www.facebook.com/Coupondelcom-109407805204561/">
                     <i className="fi fi-brands-facebook"></i>
                   </a>
                 </li>
@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="row">
         <div className="footer-col">
         <div className="address">
-           <h4><span class="material-symbols-outlined">location_on</span>Find Us At</h4>
+           <h4><span className="material-symbols-outlined">location_on</span>Find Us At</h4>
            <p>IoT Lab TIDES Business Incubator, Indian Institute of Technology Roorkee, Roorkee, Uttarakhand - 247667</p>
         </div></div>
          <div className="footer-col">
