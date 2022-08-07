@@ -24,9 +24,13 @@ module.exports = {
       },
       {
         test: /\.js|\.jsx$/,
+        enforce:"pre",
         exclude: /(node_modules)/,
-        loader: 'babel-loader',
-        options: { presets: ['@babel/preset-env','@babel/preset-react'] },
+        loader :"babel-loader",
+        options: {
+           presets: ['@babel/preset-env','@babel/preset-react'] 
+          },
+
       }
     ]
   }

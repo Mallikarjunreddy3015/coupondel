@@ -92,13 +92,13 @@ function About() {
             <p>Developer</p>
             <div className="social">
               <a href="#">
-                <i class="fi fi-brands-instagram"></i>
+                <i className="fi fi-brands-instagram"></i>
               </a>
               <a href="#">
-              <i class="fi fi-brands-linkedin"></i>
+              <i className="fi fi-brands-linkedin"></i>
               </a>
               <a href="#">
-              <i class="fi fi-brands-twitter"></i>
+              <i className="fi fi-brands-twitter"></i>
               </a>
             </div>
           </div>
@@ -109,13 +109,13 @@ function About() {
             <p>Finance & Marketing</p>
             <div className="social">
               <a href="#">
-                <i class="fi fi-brands-instagram"></i>
+                <i className="fi fi-brands-instagram"></i>
               </a>
               <a href="#">
-              <i class="fi fi-brands-linkedin"></i>
+              <i className="fi fi-brands-linkedin"></i>
               </a>
               <a href="#">
-              <i class="fi fi-brands-twitter"></i>
+              <i className="fi fi-brands-twitter"></i>
               </a>
             </div>
           </div>
@@ -126,13 +126,13 @@ function About() {
             <p>Developer, Designer</p>
             <div className="social">
               <a href="#">
-                <i class="fi fi-brands-instagram"></i>
+                <i className="fi fi-brands-instagram"></i>
               </a>
               <a href="#">
-              <i class="fi fi-brands-linkedin"></i>
+              <i className="fi fi-brands-linkedin"></i>
               </a>
               <a href="#">
-              <i class="fi fi-brands-twitter"></i>
+              <i className="fi fi-brands-twitter"></i>
               </a>
             </div>
           </div>
@@ -143,13 +143,13 @@ function About() {
             <p>Developer, Designer</p>
             <div className="social">
               <a href="#">
-                <i class="fi fi-brands-instagram"></i>
+                <i className="fi fi-brands-instagram"></i>
               </a>
               <a href="#">
-              <i class="fi fi-brands-linkedin"></i>
+              <i className="fi fi-brands-linkedin"></i>
               </a>
               <a href="#">
-              <i class="fi fi-brands-twitter"></i>
+              <i className="fi fi-brands-twitter"></i>
               </a>
             </div>
           </div>

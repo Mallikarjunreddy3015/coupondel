@@ -7,27 +7,26 @@ const activemenu=()=>{
   let menuUL= document.getElementById('menuUl')
   menuBar.classList.toggle('active')
   menuUL.classList.toggle('active')
-  let blurbody = document.getElementById('blurbody')
+  if(window.innerWidth<801){
+     let blurbody = document.getElementById('blurbody')
   blurbody.classList.toggle('blurbody')
   let root = document.getElementById('body')
   root.classList.toggle('menuactive')
+  }
+ 
 }
 
 function Header() {
   return (
     <> <div className=" " id="blurbody" onClick={activemenu}></div>
-      <header id="header ">
+      <header id="header">
         <nav>
         <div className="logo">
           <img src={logo} alt="logo" />
-          <siv id="blur" className="blur"></siv>
+          <div id="blur" className="blur"></div>
         </div>
           <div className="menuUl" id="menuUl">
-          <div id="menu" className="menu-bar " onClick={activemenu} >
-        <span class="open material-symbols-outlined">menu</span>
-        <span class="close material-symbols-outlined">close</span>
         
-        </div>
                 <ul >
             <li onClick={activemenu}>
               {" "}
@@ -49,9 +48,9 @@ function Header() {
           <Button name={"Sign in"} type={"button"} />
           </div>
         </nav>
-        <div id="menu" className="menu-bar " onClick={activemenu} onBlur={activemenu}>
-        <span class="open material-symbols-outlined">menu</span>
-        <span class="close material-symbols-outlined">close</span>
+        <div id="menu" className="menu-bar" onClick={activemenu} onBlur={activemenu}>
+        <span className="open material-symbols-outlined">menu</span>
+        <span className="close material-symbols-outlined">close</span>
         
         </div>
       </header>

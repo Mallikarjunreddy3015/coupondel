@@ -390,6 +390,7 @@ section{
     right: 80px;
     display: none;
     cursor: pointer;
+    z-index: 2;
   }
   header  .menu-bar .open ,header .menu-bar .close{
     position: absolute;
@@ -405,7 +406,6 @@ section{
         margin: 10px 15px;
     }
     .sec-3 .left-box h1{
-        background-color: aqua;
         font-size: 3rem;
     }
     .sec-3 .left-box p{
@@ -423,9 +423,7 @@ section{
         max-width: 500px;
         max-height: 500px;
     }
-    .sec-3 .right-box{
-        background-color: #FF725E;
-    }
+    
     .sec-3 .right-box img{
         margin: 10px;
     }
@@ -523,7 +521,7 @@ section{
         header .menu-bar.\.active .open, header .menu-bar .close{
         display: none;
     }
-    header .menu-bar.\.active .close, header .menu-bar .open{
+    header .menu-bar .\.active .close, header .menu-bar .open{
         display: block;
     }
 
@@ -570,6 +568,9 @@ section{
         width: 100%;
         padding-left: 5px;
         padding-right: 5px;
+    }
+    .sec-1{
+        height: auto;
     }
     .sec-1 h1{
         margin: 40px 15px 5px 15px;
