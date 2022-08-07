@@ -48,8 +48,8 @@ header{
     display: block;
     width: 85%;
     margin: 0 auto;
-    text-align: center;
- 
+    text-align: left;
+     
 }
 
 
@@ -66,6 +66,9 @@ header nav ul {
 }
 .logo{
     width: 30%;
+}
+.logo img{
+    margin-left: 70px;
 }
 .menuUl{
     width: 70%;
