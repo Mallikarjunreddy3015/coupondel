@@ -12,7 +12,10 @@ import adidas from "../../Images/brand/adidas-9.svg";
 import shopping from "../../Images/products/shopping.svg";
 import coupon from "../../Images/products/coupons.svg";
 import refer from "../../Images/products/refer.svg";
-import userdp from "../../Images/team/user.png";
+import Malli from "../../Images/team/Malli.png";
+import Raj from "../../Images/team/Raj.png";
+import Subhadeep from "../../Images/team/subhadeep.png";
+import Deepak from "../../Images/team/deepak.png";
 
 
 
@@ -87,31 +90,31 @@ function About() {
         <h1>Our Team</h1>
         <div className="card-box">
           <div className="card">
-            <img src={userdp} alt="dp" />
+            <img src={Malli} alt="dp" />
             <h4>Mallikarjun</h4>
             <p>Developer</p>
             <div className="social">
-              <a href="#">
+              <a href="https://www.instagram.com/_mallikarjuna_reddy/">
                 <i className="fi fi-brands-instagram"></i>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/mallikarjuna-reddy-600506233/">
               <i className="fi fi-brands-linkedin"></i>
               </a>
-              <a href="#">
+              <a href="https://twitter.com/Mallika03016729">
               <i className="fi fi-brands-twitter"></i>
               </a>
             </div>
           </div>
 
           <div className="card">
-            <img src={userdp} alt="dp" />
+            <img src={Raj} alt="dp" />
             <h4>Rajkumar</h4>
             <p>Finance & Marketing</p>
             <div className="social">
-              <a href="#">
+              <a href="https://www.instagram.com/rajkumar.jarupula_001/">
                 <i className="fi fi-brands-instagram"></i>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/jarupula-rajkumar-ba84281a2/">
               <i className="fi fi-brands-linkedin"></i>
               </a>
               <a href="#">
@@ -121,14 +124,14 @@ function About() {
           </div>
 
           <div className="card">
-            <img src={userdp} alt="dp" />
+            <img src={Subhadeep} alt="dp" />
             <h4>Subhadip</h4>
             <p>Developer, Designer</p>
             <div className="social">
-              <a href="#">
+              <a href="https://www.instagram.com/0_subhadip_1/">
                 <i className="fi fi-brands-instagram"></i>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/subhadip-mandal-313a121b6/">
               <i className="fi fi-brands-linkedin"></i>
               </a>
               <a href="#">
@@ -138,14 +141,14 @@ function About() {
           </div>
 
           <div className="card">
-            <img src={userdp} alt="dp" />
+            <img src={Deepak} alt="dp" />
             <h4>Deepak</h4>
             <p>Developer, Designer</p>
             <div className="social">
               <a href="#">
                 <i className="fi fi-brands-instagram"></i>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/deepak-bairwa/">
               <i className="fi fi-brands-linkedin"></i>
               </a>
               <a href="#">
