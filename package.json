@@ -4,7 +4,7 @@
   "description": "Official repo of CouponDel",
   "main": "backend/server.js",
   "scripts": {
-    "start": "start http://localhost:3000 && nodemon backend/server.js ",
+    "start": "start backend/server.js ",
     "build": " ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
