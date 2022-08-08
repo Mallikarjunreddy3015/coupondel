@@ -69,8 +69,8 @@ function About() {
         <div className="left-box">
           <h1>All Your Favorites in One Place</h1>
           <p>
-            Spend in your all favorite sites through us and save more. All
-            popular brands showing here and more will be available here. Just
+            Shop in your favorite sites through our website and save more. All
+            popular brands showing here and more will be available . Just
             wait, <span>We are coming soon.</span>
           </p>
         </div>

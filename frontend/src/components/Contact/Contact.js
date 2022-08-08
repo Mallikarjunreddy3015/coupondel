@@ -42,7 +42,7 @@ setLoading("2");
   return (
     <>
       <div className="contact">
-        <form name="google-sheet" ref={formRef} onSubmit={handleSubmit} className="form" autoComplete="on">
+        <form  ref={formRef} onSubmit={handleSubmit}  autoComplete="on">
           <h2>Name</h2>
           <input
             type="text"
