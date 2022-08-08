@@ -2,9 +2,9 @@
   "name": "coupondel",
   "version": "1.0.0",
   "description": "Official repo of CouponDel",
-  "main": "backend/server.js",
+  "main": "nodemon backend/server.js",
   "scripts": {
-    "start": "start backend/server.js ",
+    "start": "start http://localhost:3000 && nodemon backend/server.js ",
     "build": " ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
