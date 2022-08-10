@@ -703,6 +703,24 @@ section{
         margin: auto;
     }
 
+    header .menu-bar{
+        right:50px;
+    }
+    
+    header img{
+        height:40px;
+        width: 30px;
+    }
+
+
+    .back-top{
+        bottom:20px;
+    }
+
+    .sec-4  .contact form button{
+        float: left;
+        margin: 20px 35px;
+    }
    
   }
 

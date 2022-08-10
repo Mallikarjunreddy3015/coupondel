@@ -1,9 +1,11 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
 .footer-container{
+    position:relative;
     background-color: #24262b;
     background-color: rgb(10,21,53);
     min-height: 300px;
     text-transform: capitalize;
+
 }
 .row{
     width: 90%;
@@ -49,6 +51,8 @@
     line-height: 48px;
     width: 100%;
     text-align: center;
+    
+
 }
 .footer-container li:hover,.footer-container li:hover>a{
     transform: translateX(5px);
@@ -131,6 +135,10 @@
     }
     .footer-col li{
         border-bottom: 2px solid #2b2a2a;
+
     }
+
+    
+
 
 }

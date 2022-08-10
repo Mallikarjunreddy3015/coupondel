@@ -7,11 +7,18 @@ const activemenu=()=>{
   let menuUL= document.getElementById('menuUl')
   menuBar.classList.toggle('active')
   menuUL.classList.toggle('active')
+  
   if(window.innerWidth<801){
      let blurbody = document.getElementById('blurbody')
   blurbody.classList.toggle('blurbody')
   let root = document.getElementById('body')
   root.classList.toggle('menuactive')
+  }
+
+  if(menuBar.className=="menu-bar active"){
+    menuBar.style.display="none";
+  }else{
+    menuBar.style.display="";
   }
  
 }

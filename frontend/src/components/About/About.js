@@ -33,7 +33,7 @@ function About() {
           </span>
         </div>
         <div className="right-box">
-          <img src={firstImage} draggable="false" alt="" />
+          <img src={firstImage} draggable="false" alt="pic" loading="lazy" />
         </div>
       </section>
 
