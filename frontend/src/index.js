@@ -6,7 +6,6 @@ import "../public/script";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    
-    <h1>hi all</h1>
+    <App/>
     );
 
