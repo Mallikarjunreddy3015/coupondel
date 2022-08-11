@@ -27,7 +27,8 @@
     "react-router-dom": "^6.3.0",
     "sweetalert": "^2.1.2",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "@mui/icons-material" :"*"
   },
   "devDependencies": {
     "babel-loader": "^8.2.5",
