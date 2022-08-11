@@ -1,7 +1,10 @@
 import React from "react";
-
+import Affiliates from './components/affiliates/affiliates.jsx';
+Affiliates
 const App = () => {
-  return <></>;
+  return <>
+  <Affiliates/>
+  </>;
 };
 
 export default App;
