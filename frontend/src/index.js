@@ -5,5 +5,8 @@ import App from "./App";
 import "../public/script";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+    
+    <h1>hi all</h1>
+    );
 
