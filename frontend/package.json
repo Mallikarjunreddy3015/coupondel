@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Mallikarjun",
+  "author": "Mallikarjuna",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.18.9",
