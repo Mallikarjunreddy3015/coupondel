@@ -1,10 +1,14 @@
 import React from "react";
-import Affiliates from './components/affiliates/affiliates.jsx';
-Affiliates
+import Affiliates from "./components/affiliates/affiliates.jsx";
+import Header from "./components/common/Header.jsx";
+
 const App = () => {
-  return <>
-  <Affiliates/>
-  </>;
+  return (
+    <>
+      <Header />
+      <Affiliates />
+    </>
+  );
 };
 
 export default App;
