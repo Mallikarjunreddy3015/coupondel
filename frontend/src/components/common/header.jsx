@@ -1,5 +1,5 @@
-import React from "react";
-import {Box, AppBar, IconButton, InputBase, Tabs, Toolbar, Tab, Button, Link } from '@mui/material';
+import React , {useState} from "react";
+import {Box, AppBar, IconButton, InputBase, Drawer, Button, Link , List , ListItemButton} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import HelpIcon from '@mui/icons-material/Help';
@@ -10,7 +10,11 @@ import styled from "@emotion/styled";
 
 
 
+
 const Header = () => {
+
+    const [openDrawer , setOpenDrawer] = useState(false)
+
     return(
         <>
           <AppBar className="AppBar" sx={{
@@ -36,42 +40,53 @@ const Header = () => {
                 </Link>
             </Box>
 
-            <Box  sx={{mr : 1 , display : {sm : "none" , md : "block" , xs : "none"}}}>
+            <Box  sx={{mr : 1 , display : {sm : "none" , md : "flex" , xs : "none"}}}>
                 
                 
-                <InputBase placeholder="Search..." sx={{
-                    backgroundColor : "#e7e7e7" ,
-                    padding : "5px 10px 5px 12px" ,
-                    borderRadius : "10px 0px 0px 10px",
-                    mr : 0
-                    }}
-                 />
-                <IconButton sx={{mr : 4 ,
-                 backgroundColor : "#e7e7e7" ,
-                 borderRadius : "0px 10px 10px 0px" ,
-                 padding : "9px 10px 8px 9px" ,
-                 transform : "translateY(-0.75px)"
-                 }}>
-                    <SearchIcon />
-                </IconButton>
+                <Box sx={{backgroundColor : "#e7e7e7" , padding : " 0 0 0 15px " , mr : 3 , borderRadius : "4px"}}>
+                    <InputBase placeholder="Search" />
+                    <IconButton sx={{borderRadius : "0px"}}>
+                        <SearchIcon />
+                    </IconButton>
+                </Box>
 
                 <Button sx={{mr : 2}} variant = "outlined">Log in</Button>
                 <IconButton sx={{mr : 2}}>
                     <NotificationsIcon />
                 </IconButton>
 
-                <IconButton sx={{mr : 2}}>
+                <IconButton onClick={() => {
+                setOpenDrawer(!openDrawer)
+                }} sx={{mr : 2}}>
                     <AccountCircleIcon />
                 </IconButton>
 
                 
             </Box>
-            <IconButton sx={{ml : "auto", mr : 3 , display : {xs : "block" ,  md : "none"}}}>
-                    <MenuIcon />
+            
+            
+
+            <Drawer open={openDrawer}
+                onClose = {() => {
+                setOpenDrawer(() => {
+                    return (!openDrawer)
+                })
+                }}
+                >
+                <List>
+                    <ListItemButton sx={{width : "15rem" , textAlign : "center"}}>
+                        Log in
+                    </ListItemButton>
+                </List>
+            </Drawer>
+            
+            <IconButton sx={{ml : "auto", mr : 3 , display : {xs : "block" ,  md : "none"}}} 
+            onClick={() => {
+                setOpenDrawer(!openDrawer)
+            }}>
+                <AccountCircleIcon />
             </IconButton>
             
-            
-           
           </AppBar>
         </>
     )
