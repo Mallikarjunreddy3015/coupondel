@@ -2,6 +2,9 @@ import { AppBar, IconButton, Toolbar , Link, Drawer, List , ListItemButton } fro
 import React , {useState} from "react";
 import HomeIcon from '@mui/icons-material/Home';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import SellIcon from '@mui/icons-material/Sell';
+import ShareIcon from '@mui/icons-material/Share';
 
 const FootNav = () => {
 
@@ -20,36 +23,42 @@ const FootNav = () => {
             >
                 <Toolbar sx={{
                     display : "flex",
-                    gap : "10vw" ,
+                    gap : "6vw" ,
                     alignItems : "center",
-                    justifyContent : "center"
+                    justifyContent : "center",
+                    overflow : "auto"
                 }}> 
 
 
-                <Link href="#" underline="none">
-                    <IconButton>
+                <Link href="#" underline="none" >
+                    <IconButton sx={{fontSize : "1rem" , display : "flex" , flexDirection : "column" , color : "#fff"}}>
                         <HomeIcon />
+                        <p>Home</p>
                     </IconButton>
                 </Link>
                 <Link href="#" underline="none">    
-                    <IconButton>
-                        S
+                    <IconButton sx={{fontSize : "1rem" , display : "flex" , flexDirection : "column" , color : "#fff"}}>
+                        <ShoppingBagIcon />
+                        <p>Stores</p>
                     </IconButton>
                 </Link>
                 <Link href="#" underline="none">    
-                    <IconButton>
-                        C
+                    <IconButton sx={{fontSize : "1rem" , display : "flex" , flexDirection : "column" , color : "#fff"}}>
+                        <SellIcon />
+                        <p>Coupons</p>
                     </IconButton>
                 </Link>
                 <Link href="#" underline="none">    
-                    <IconButton>
-                        R
+                    <IconButton sx={{fontSize : "1rem" , display : "flex" , flexDirection : "column" , color : "#fff"}}>
+                        <ShareIcon />
+                        <p>Refer</p>
                     </IconButton>
                 </Link>    
-                    <IconButton onClick={() => {
+                    <IconButton sx={{fontSize : "1rem" , display : "flex" , flexDirection : "column" , color : "#fff"}} onClick={() => {
                     setOpenDrawer(!openDrawer)
                 }}>
                         <MenuOpenIcon />
+                        <p>Menu</p>
                     </IconButton>
                 </Toolbar>
             </AppBar>
