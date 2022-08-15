@@ -34,7 +34,7 @@ const FootNav = () => {
                 
                 <BottomNavigationAction
                 component={Link}
-                to="/home"
+                to="/"
                  label="Home" icon={<HomeIcon />} />
                 <BottomNavigationAction label="Stores" icon={<ShoppingBagIcon />} />
                 <BottomNavigationAction label="Coupons" icon={<DiscountIcon />} />
