@@ -33,7 +33,8 @@ const Header = () => {
             flexWrap : "wrap" , 
             flexDirection:"row" ,
             alignItems : "center",
-            padding : "10px 0"
+            padding : "10px 0" ,
+            boxShadow : "0 0 10px 1px #e0e0e0"
             }}>
 
             <IconButton sx={{ mr : 1 , ml : 3 , mt : 1 , display : {xs : "none" , sm : "block" , md : "block"}}} 
