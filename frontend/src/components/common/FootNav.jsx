@@ -23,8 +23,7 @@ const FootNav = () => {
                 bottom : 0 ,
                 mt : "auto" , 
                 display : { md : "none" , sm : "none"} ,
-                boxShadow : "0 0 10px 1px #e0e0e0",
-                overflow : "auto"    
+                boxShadow : "0 0 10px 1px #e0e0e0"  
                     }}
                 showLabels
                 value={value}
@@ -39,7 +38,7 @@ const FootNav = () => {
                  label="Home" icon={<HomeIcon />} />
                 <BottomNavigationAction label="Stores" icon={<ShoppingBagIcon />} />
                 <BottomNavigationAction label="Coupons" icon={<DiscountIcon />} />
-                <BottomNavigationAction label="Coupons" icon={<ShareIcon />} />
+                <BottomNavigationAction label="Referral" icon={<ShareIcon />} />
                 
                 <BottomNavigationAction onClick={()=>{
                     setOpenDrawer(!openDrawer)
