@@ -1,9 +1,12 @@
+import { ThemeProvider } from "@mui/system";
 import React from "react";
 import Affiliates from './components/affiliates/affiliates.jsx';
-Affiliates
+import Footer from "./components/common/Footer"
+
 const App = () => {
   return <>
-  <Affiliates/>
+    <Affiliates/>
+ <Footer/>
   </>;
 };
 
