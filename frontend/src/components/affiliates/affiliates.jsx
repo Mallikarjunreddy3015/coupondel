@@ -17,12 +17,7 @@ useEffect(()=>{
 },[]);
   return (
     <>
-     <Container>
-      <h1 style={{fontSize:"5vw"}}>Top Store</h1>
-      <Box>
-
-      </Box>
-     </Container>
+    
     </>
   )
 }

@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Mallikarjun",
+  "author": "Mallikarjuna",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.18.9",
@@ -19,7 +19,7 @@
     "@emotion/styled": "^11.10.0",
     "@flaticon/flaticon-uicons": "^1.7.0",
     "@material-ui/core": "^4.12.4",
-    "@mui/icons-material": "*",
+    "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.0",
     "@mui/styled-engine-sc": "^5.10.0",
     "axios": "^0.27.2",
