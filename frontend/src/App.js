@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@mui/system";
 import React from "react";
 import Affiliates from "./components/affiliates/affiliates.jsx";
 import Header from "./components/common/Header.jsx";

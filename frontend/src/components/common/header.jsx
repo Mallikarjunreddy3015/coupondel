@@ -7,6 +7,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Container } from "@mui/system";
 import styled from "@emotion/styled";
+import Logo from "../../Images/Logo.png";
 
 
 
@@ -44,7 +45,7 @@ const Header = () => {
                 <MenuIcon />
             </IconButton>
           
-          <img style={{marginLeft : "10px"}} width={200}  src="http://www.coupondel.com/imgs/logo-icon.ee909b75407f5be0b7f5bd5a84693622.png" alt="#" />
+          <img style={{marginLeft : "10px"}} width={200}  src={Logo} alt="#" />
 
             <Box sx={{display : {md : "flex" , sm : "flex" , xs : "none"} , gap : "4vw" , width : "auto" , margin : "auto"}}>
                 <Link href="#" underline="none">
