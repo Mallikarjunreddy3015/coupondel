@@ -7,6 +7,7 @@ import DiscountIcon from '@mui/icons-material/Discount';
 import ShareIcon from '@mui/icons-material/Share';
 import  {makeStyles}  from '@mui/styles';
 
+
 const FootNav = () => {
 
     const [openDrawer , setOpenDrawer] = useState(false);
@@ -19,7 +20,8 @@ const FootNav = () => {
             <BottomNavigation
        
                 sx={{
-              gap:"0vw",
+                  padding:"10px",
+                gap:"0vw",
                 width: "100%" , 
                 position : "fixed" , 
                 bottom : 0 ,
@@ -37,7 +39,7 @@ const FootNav = () => {
                 
                 <BottomNavigationAction
                 component={Link}
-                to="/"
+                to="www.google.com"
                  label="Home" icon={<HomeIcon sx={{minWidth : "5px"  ,fontSize: "6vw"}} />} />
                 <BottomNavigationAction label="Stores" icon={<ShoppingBagIcon sx={{minWidth : "5px", fontSize: "6vw" } } />} />
                 <BottomNavigationAction label="Coupons" icon={<DiscountIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
@@ -46,6 +48,8 @@ const FootNav = () => {
                 <BottomNavigationAction onClick={()=>{
                     setOpenDrawer(!openDrawer)
                 }} label="Menu" icon={<MenuOpenIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
+
+
             </BottomNavigation>
             
            

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Typography } from '@mui/material';
 import { Box, Container } from '@mui/system';
-//import axios from "axios"
+import axios from "axios"
 
 const Affiliates = () => {
   const [data ,setData]= useState([])
