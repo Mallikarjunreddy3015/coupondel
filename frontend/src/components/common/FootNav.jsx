@@ -5,7 +5,7 @@ import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import DiscountIcon from '@mui/icons-material/Discount';
 import ShareIcon from '@mui/icons-material/Share';
-
+import  {makeStyles}  from '@mui/styles';
 
 const FootNav = () => {
 
@@ -17,7 +17,9 @@ const FootNav = () => {
         <>
         
             <BottomNavigation
+       
                 sx={{
+              gap:"0vw",
                 width: "100%" , 
                 position : "fixed" , 
                 bottom : 0 ,
@@ -36,19 +38,20 @@ const FootNav = () => {
                 <BottomNavigationAction
                 component={Link}
                 to="/"
-                 label="Home" icon={<HomeIcon sx={{minWidth : "5px"}} />} />
-                <BottomNavigationAction label="Stores" icon={<ShoppingBagIcon sx={{minWidth : "5px"}} />} />
-                <BottomNavigationAction label="Coupons" icon={<DiscountIcon sx={{minWidth : "5px"}} />} />
-                <BottomNavigationAction label="Referral" icon={<ShareIcon sx={{minWidth : "5px"}} />} />
+                 label="Home" icon={<HomeIcon sx={{minWidth : "5px"  ,fontSize: "6vw"}} />} />
+                <BottomNavigationAction label="Stores" icon={<ShoppingBagIcon sx={{minWidth : "5px", fontSize: "6vw" } } />} />
+                <BottomNavigationAction label="Coupons" icon={<DiscountIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
+                <BottomNavigationAction label="Referral" icon={<ShareIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
                 
                 <BottomNavigationAction onClick={()=>{
                     setOpenDrawer(!openDrawer)
-                }} label="Menu" icon={<MenuOpenIcon />} />
+                }} label="Menu" icon={<MenuOpenIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
             </BottomNavigation>
             
            
 
             <Drawer anchor="right" open={openDrawer} sx={{
+           
                 display : {xs : "block" , md : "none" , sm : "none"},
                 boxShadow : "none" ,
                 }}
