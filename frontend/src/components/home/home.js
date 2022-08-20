@@ -4,8 +4,18 @@ import { Box } from "@mui/system";
 import { Button, Card, IconButton, InputBase } from "@mui/material";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import firstImage from "../../Images/first.png";
+import { NavLink } from "react-router-dom";
 
 var images = [
+  {
+    url: `${firstImage}`,
+  },
+  {
+    url: `${firstImage}`,
+  },
+  {
+    url: `${firstImage}`,
+  },
   {
     url: `${firstImage}`,
   },
@@ -75,6 +85,8 @@ const Home = () => {
         <h1>Top Stores</h1>
 
         <Button
+          component={NavLink}
+          to="/affiliates"
           sx={{
             boxShadow: "none",
             "&:hover": {
@@ -99,10 +111,10 @@ const Home = () => {
           gap: { xs: 3, sm: 0, md: 0 },
           width: "90vw",
           margin: "auto",
-          "&>*:nth-child(5)": {
+          "&>*:nth-of-type(5)": {
             display: { xs: "none", md: "flex", sm: "flex" },
           },
-          "&>*:nth-child(6)": {
+          "&>*:nth-of-type(6)": {
             display: { xs: "none", md: "flex" },
           },
         }}
@@ -110,13 +122,14 @@ const Home = () => {
         {brandImages.map((brand, index) => {
           return (
             <Card
+              key={index}
               sx={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 height: { xs: "150px", sm: "15vw", md: "13vw" },
                 width: { xs: "150px", sm: "15vw", md: "13vw" },
-                boxShadow: " 0 0 20px 3px #e7e7e7",
+                boxShadow: " 5px 0 20px 3px #e7e7e7",
               }}
             >
               <img
@@ -171,10 +184,10 @@ const Home = () => {
           gap: { xs: 3, sm: 0, md: 0 },
           width: "90vw",
           margin: "auto",
-          "&>*:nth-child(5)": {
+          "&>*:nth-of-type(5)": {
             display: { xs: "none", md: "flex", sm: "flex" },
           },
-          "&>*:nth-child(6)": {
+          "&>*:nth-of-type(6)": {
             display: { xs: "none", md: "flex" },
           },
         }}
@@ -182,6 +195,7 @@ const Home = () => {
         {brandImages.map((brand, index) => {
           return (
             <Card
+              key={index}
               sx={{
                 display: "flex",
                 alignItems: "center",
