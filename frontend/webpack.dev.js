@@ -14,6 +14,9 @@ module.exports = merge(common, {
       template: "./public/index.html"
     })
   ],
+  devServer : {
+    historyApiFallback : true
+  },
   devtool: 'source-map',
   module: {
     rules: [
