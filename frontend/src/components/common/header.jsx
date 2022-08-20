@@ -23,7 +23,22 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
-  const drawerList = ["Log in", "My Profile"];
+  const drawerList = ["Log in", "My Profile", "About Us"];
+
+  const drawerLists = [
+    {
+      name: "My Profile",
+      url: "#",
+    },
+    {
+      name: "About Us",
+      url: "coupondel.com",
+    },
+    {
+      name: "Log in",
+      url: "/login",
+    },
+  ];
 
   const opened = Boolean(openMenu);
   const handleClick = (event) => {
@@ -136,10 +151,16 @@ const Header = () => {
           }}
         >
           <List>
-            {drawerList.map((li, index) => {
+            {drawerLists.map((li, index) => {
               return (
                 <p key={index}>
-                  <ListItemButton sx={{ width: "15rem" }}>{li}</ListItemButton>
+                  <ListItemButton
+                    component={NavLink}
+                    to={li.url}
+                    sx={{ width: "15rem" }}
+                  >
+                    {li.name}
+                  </ListItemButton>
                 </p>
               );
             })}
