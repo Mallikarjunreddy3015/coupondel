@@ -17,7 +17,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
-import Logo from "../../Images/Logo.png";
+import Logo from "../../Images/logo.png";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -110,7 +110,12 @@ const Header = () => {
             </IconButton>
           </Box>
 
-          <Button sx={{ mr: 2 }} variant="outlined">
+          <Button
+            component={NavLink}
+            to="/login"
+            sx={{ mr: 2 }}
+            variant="outlined"
+          >
             Log in
           </Button>
 

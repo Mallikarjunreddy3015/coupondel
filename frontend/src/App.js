@@ -5,16 +5,17 @@ import Header from "./components/common/Header.jsx";
 import FootNav from "./components/common/FootNav.jsx";
 import Footer from "./components/common/Footer.jsx";
 import Home from "./components/home/home.js";
-import { Routes,Route, NavLink } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 
 const App = () => {
   return (
-    <><Header />
-     <Routes> 
-      <Route path="/" element={<Home/>}/>
-      <Route path="/affiliates" element={<Affiliates />}/>
-     </Routes>
-     <Footer/>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/affiliates" element={<Affiliates />} />
+      </Routes>
+      <Footer />
       <FootNav />
     </>
   );
