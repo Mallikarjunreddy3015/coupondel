@@ -21,7 +21,7 @@ const FootNav = () => {
             <BottomNavigation
        
                 sx={{
-                  padding:"10px",
+                  padding:"10px 0px",
                 gap:"0vw",
                 width: "100%" , 
                 position : "fixed" , 
@@ -30,6 +30,7 @@ const FootNav = () => {
                 display : {xs : "flex" , md : "none" , sm : "none"} ,
                 boxShadow : "0 0 10px 1px #e0e0e0" ,
                 overflow : "auto" ,
+                flexWrap:"wrap"
                     }}
                 showLabels
                 value={value}
@@ -39,16 +40,16 @@ const FootNav = () => {
 
                 
                 <BottomNavigationAction
-                sx={{padding:"none"}}
+                sx={{padding:"0px",width:"20%",minWidth:"10px"}}
                 component ={NavLink} to="/"
                  label="Home" icon={<HomeIcon  />} />
-               <BottomNavigationAction sx={{padding:"none"}} component={NavLink} label="Stores" to="/affiliates" icon={<ShoppingBagIcon/>}></BottomNavigationAction>
-                <BottomNavigationAction sx={{padding:"none"}} label="Coupons" icon={<DiscountIcon  />} />
-                <BottomNavigationAction sx={{padding:"none"}} label="Referral" icon={<ShareIcon />} />
+               <BottomNavigationAction  sx={{padding:"0px",width:"20%" ,minWidth:"10px"}} component={NavLink} label="Stores" to="/affiliates" icon={<ShoppingBagIcon/>}></BottomNavigationAction>
+                <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} label="Coupons" icon={<DiscountIcon  />} />
+                <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} label="Referral" icon={<ShareIcon />} />
                 
-                <BottomNavigationAction onClick={()=>{
+                <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} onClick={()=>{
                     setOpenDrawer(!openDrawer)
-                }} label="Menu" icon={<MenuOpenIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
+                }} label="Menu" icon={<MenuOpenIcon/>} />
 
 
             </BottomNavigation>
