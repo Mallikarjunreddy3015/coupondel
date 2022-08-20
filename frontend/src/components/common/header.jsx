@@ -15,11 +15,8 @@ import {
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import HelpIcon from "@mui/icons-material/Help";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Container } from "@mui/system";
-import styled from "@emotion/styled";
 import Logo from "../../Images/Logo.png";
 import { NavLink } from "react-router-dom";
 
@@ -64,15 +61,17 @@ const Header = () => {
           <MenuIcon />
         </IconButton>
 
-        <Box
-          component="img"
-          sx={{
-            marginLeft: "10px",
-            width: { md: 200, xs: 150 },
-          }}
-          src={Logo}
-          alt="#"
-        />
+        <NavLink to="/">
+          <Box
+            component="img"
+            sx={{
+              marginLeft: "10px",
+              width: { md: 200, xs: 150 },
+            }}
+            src={Logo}
+            alt="#"
+          />
+        </NavLink>
 
         <Box
           sx={{

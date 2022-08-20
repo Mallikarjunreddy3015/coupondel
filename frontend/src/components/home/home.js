@@ -56,18 +56,20 @@ const Home = () => {
         swipe
       >
         {images.map((image, index) => (
-          <Box
-            component="img"
-            key={index}
-            sx={{
-              display: "block",
-              margin: " 0 auto",
-              width: "90vw",
-              height: { xs: "15vh", md: "30vh" },
-            }}
-            src={image.url}
-            alt="pic"
-          />
+          <Box component={NavLink} to="/">
+            <Box
+              component="img"
+              key={index}
+              sx={{
+                display: "block",
+                margin: " 0 auto",
+                width: "90vw",
+                height: { xs: "15vh", md: "30vh" },
+              }}
+              src={image.url}
+              alt="pic"
+            />
+          </Box>
         ))}
       </Carousel>
 
