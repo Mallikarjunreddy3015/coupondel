@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family: "Mulish" , sans-serif;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline;
+}
  /* <AppBar position="fixed"  color="primary"
                 sx={{ top : "auto", bottom : 0 ,
                 display : {xs : "block" , md : "none" , sm : "none"},
