@@ -16,15 +16,14 @@ const allcards =[
 
 const Affiliates = () => {
   const [data ,setData]= useState([])
+const cardList = allcards.map((curr,index)=>{
+  return <MCard key={index} img ={carddata.img} details ={carddata.details} discount={carddata.discount} ></MCard>
 
+ })
   return (
     <>
     <Container sx={{display:"flex",flexWrap:"wrap",mt:11,mb:10}}>
-    
-              {allcards.map((curr,index)=>{
-      return <MCard img ={carddata.img} details ={carddata.details} discount={carddata.discount} ></MCard>
-
-     })}
+      {cardList}
     </Container>
   
     </>
