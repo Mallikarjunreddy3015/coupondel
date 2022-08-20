@@ -10,7 +10,8 @@ const carddata ={
   discount:"8%"
 }
 const allcards =[
-  carddata,carddata,carddata,carddata,carddata,carddata,carddata,carddata,carddata,carddata
+  carddata,carddata,carddata,carddata,carddata,carddata,carddata,carddata,carddata,carddata,
+  carddata,carddata,carddata,carddata,carddata,carddata,carddata,carddata,carddata,carddata,
 ]
 
 const Affiliates = () => {

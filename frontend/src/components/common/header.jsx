@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Container } from "@mui/system";
 import styled from "@emotion/styled";
 import Logo from "../../Images/Logo.png";
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -48,9 +49,9 @@ const Header = () => {
           <img style={{marginLeft : "10px"}} width={200}  src={Logo} alt="#" />
 
             <Box sx={{display : {md : "flex" , sm : "flex" , xs : "none"} , gap : "4vw" , width : "auto" , margin : "auto"}}>
-                <Link href="#" underline="none">
+                <NavLink  to="/affiliates" style={{textDecoration:"none",color:"black"}}>
                     {"Stores"}
-                </Link>
+                </NavLink>
                 <Link href="#" underline="none">
                     {"Coupons"}
                 </Link>
