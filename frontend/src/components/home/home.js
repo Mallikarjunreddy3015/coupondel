@@ -1,29 +1,13 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Box } from "@mui/system";
-import {
-  Button,
-  Card,
-  Container,
-  IconButton,
-  InputBase,
-  Paper,
-  stepClasses,
-} from "@mui/material";
+import { Button, Card, IconButton, InputBase } from "@mui/material";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
+import firstImage from "../../Images/first.png";
 
 var images = [
   {
-    url: "https://rukminim1.flixcart.com/fk-p-flap/844/140/image/5b83b9417eeb8124.jpg?q=50",
-  },
-  {
-    url: "https://rukminim1.flixcart.com/fk-p-flap/2000/140/image/5cee5d597b55471a.jpg?q=50",
-  },
-  {
-    url: "https://rukminim1.flixcart.com/fk-p-flap/844/140/image/d3a42152e8c1f5e5.jpeg?q=50",
-  },
-  {
-    url: "https://rukminim1.flixcart.com/fk-p-flap/844/140/image/7b06cf56f376257c.jpg?q=50",
+    url: `${firstImage}`,
   },
 ];
 
@@ -54,23 +38,22 @@ const Home = () => {
       <Carousel
         sx={{
           mt: 11,
-          minHeight: { xs: "200px" },
         }}
         interval={5000}
         animation="slide"
-        indicators={false}
+        indicators={true}
         stopAutoPlayOnHover
         swipe
-        navButtonsAlwaysVisible
       >
         {images.map((image, index) => (
-          <img
+          <Box
+            component="img"
             key={index}
-            style={{
+            sx={{
               display: "block",
               margin: " 0 auto",
               width: "90vw",
-              height: "100%",
+              height: { xs: "15vh", md: "30vh" },
             }}
             src={image.url}
             alt="pic"
