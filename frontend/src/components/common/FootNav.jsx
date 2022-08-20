@@ -6,6 +6,7 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import DiscountIcon from '@mui/icons-material/Discount';
 import ShareIcon from '@mui/icons-material/Share';
 import  {makeStyles}  from '@mui/styles';
+import { NavLink } from 'react-router-dom';
 
 
 const FootNav = () => {
@@ -17,7 +18,7 @@ const FootNav = () => {
     return(
         <>
         
-            <BottomNavigation component={Link}
+            <BottomNavigation
        
                 sx={{
                   padding:"10px",
@@ -38,10 +39,12 @@ const FootNav = () => {
 
                 
                 <BottomNavigationAction
-                 label="Home" icon={<HomeIcon sx={{minWidth : "5px"  ,fontSize: "6vw"}} />} />
-               <BottomNavigationAction label="Stores" to="/affiliates" icon={<ShoppingBagIcon />}></BottomNavigationAction>
-                <BottomNavigationAction label="Coupons" icon={<DiscountIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
-                <BottomNavigationAction label="Referral" icon={<ShareIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
+                sx={{padding:"none"}}
+                component ={NavLink} to="/"
+                 label="Home" icon={<HomeIcon  />} />
+               <BottomNavigationAction sx={{padding:"none"}} component={NavLink} label="Stores" to="/affiliates" icon={<ShoppingBagIcon/>}></BottomNavigationAction>
+                <BottomNavigationAction sx={{padding:"none"}} label="Coupons" icon={<DiscountIcon  />} />
+                <BottomNavigationAction sx={{padding:"none"}} label="Referral" icon={<ShareIcon />} />
                 
                 <BottomNavigationAction onClick={()=>{
                     setOpenDrawer(!openDrawer)
