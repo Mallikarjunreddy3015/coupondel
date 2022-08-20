@@ -21,6 +21,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Container } from "@mui/system";
 import styled from "@emotion/styled";
 import Logo from "../../Images/Logo.png";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -81,9 +82,12 @@ const Header = () => {
             margin: "auto",
           }}
         >
-          <Link href="#" underline="none">
+          <NavLink
+            to="/affiliates"
+            style={{ textDecoration: "none", color: "black" }}
+          >
             {"Stores"}
-          </Link>
+          </NavLink>
           <Link href="#" underline="none">
             {"Coupons"}
           </Link>

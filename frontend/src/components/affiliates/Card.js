@@ -8,8 +8,7 @@ import DiscountIcon from '@mui/icons-material/Discount';
 
 const MCard=(props)=> {
   return (
-    <>
- <Card id='card' sx={{ height:"150px" , width:{xs:"40%",sm:"18%"} ,maxWidth: 320 ,display:"inline-block",margin:"16px auto",objectFit:"fill" ,padding:"5px 0",
+ <Card sx={{ height:"150px" , width:{xs:"40%",sm:"18%"} ,maxWidth: 320 ,display:"inline-block",margin:"16px auto",objectFit:"fill" ,padding:"5px 0",
              borderRadius:"12px",
              boxShadow:"0px 2px 8px gray",
              "&:hover":{
@@ -35,8 +34,6 @@ const MCard=(props)=> {
         <Button variant='contained' color='secondary' sx={{fontSize:"min(calc(0.8vw + 0.4rem),1rem)",width:"90%",textTransform:"capitalize",margin:"auto",display:"block"}}>{`You can save ${props.discount}`}</Button>   
       </CardActionArea>
     </Card>
-    </>
-   
   );
 }
 export default MCard;
