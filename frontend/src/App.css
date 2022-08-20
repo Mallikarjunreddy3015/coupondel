@@ -9,6 +9,9 @@ a{
     color: inherit;
     display: inline;
 }
+.bnavigation{
+    padding: 0px;
+}
  /* <AppBar position="fixed"  color="primary"
                 sx={{ top : "auto", bottom : 0 ,
                 display : {xs : "block" , md : "none" , sm : "none"},
