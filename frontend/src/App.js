@@ -3,6 +3,7 @@ import React from "react";
 import Affiliates from "./components/affiliates/affiliates.jsx";
 import Header from "./components/common/Header.jsx";
 import FootNav from "./components/common/FootNav.jsx";
+import Footer from "./components/common/Footer.jsx";
 import Home from "./components/home/home.js";
 import { Routes,Route, NavLink } from "react-router-dom";
 
