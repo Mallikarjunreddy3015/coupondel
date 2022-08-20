@@ -1,4 +1,4 @@
-import {Drawer, List , ListItemButton, BottomNavigation, BottomNavigationAction, Link, Icon } from "@mui/material";
+import {Drawer, List , ListItemButton, BottomNavigation, BottomNavigationAction, Link} from "@mui/material";
 import React , {useState} from "react";
 import HomeIcon from '@mui/icons-material/Home';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
@@ -6,7 +6,6 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import DiscountIcon from '@mui/icons-material/Discount';
 import ShareIcon from '@mui/icons-material/Share';
 import  {makeStyles}  from '@mui/styles';
-import { NavLink } from "react-router-dom";
 
 
 const FootNav = () => {
@@ -18,7 +17,7 @@ const FootNav = () => {
     return(
         <>
         
-            <BottomNavigation
+            <BottomNavigation component={Link}
        
                 sx={{
                   padding:"10px",
@@ -39,10 +38,8 @@ const FootNav = () => {
 
                 
                 <BottomNavigationAction
-                component={Link}
-                to="www.google.com"
                  label="Home" icon={<HomeIcon sx={{minWidth : "5px"  ,fontSize: "6vw"}} />} />
-               <BottomNavigationAction label="Stores" component={Link} href="/affiliates" icon={<ShoppingBagIcon />}></BottomNavigationAction>
+               <BottomNavigationAction label="Stores" to="/affiliates" icon={<ShoppingBagIcon />}></BottomNavigationAction>
                 <BottomNavigationAction label="Coupons" icon={<DiscountIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
                 <BottomNavigationAction label="Referral" icon={<ShareIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
                 
