@@ -130,7 +130,7 @@ const Home = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 height: { xs: "auto", sm: "15vw", md: "13vw" },
-                width: { xs: "40vh", sm: "15vw", md: "13vw" },
+                width: { xs: "40vw", sm: "15vw", md: "13vw" },
                 boxShadow: " 5px 0 20px 3px #e7e7e7",
               }}
             >
