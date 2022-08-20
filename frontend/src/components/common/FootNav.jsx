@@ -1,4 +1,4 @@
-import {Drawer, List , ListItemButton, BottomNavigation, BottomNavigationAction, Link } from "@mui/material";
+import {Drawer, List , ListItemButton, BottomNavigation, BottomNavigationAction, Link, Icon } from "@mui/material";
 import React , {useState} from "react";
 import HomeIcon from '@mui/icons-material/Home';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
@@ -42,8 +42,7 @@ const FootNav = () => {
                 component={Link}
                 to="www.google.com"
                  label="Home" icon={<HomeIcon sx={{minWidth : "5px"  ,fontSize: "6vw"}} />} />
-                 <NavLink to="/affiliates">
-                <BottomNavigationAction label="Stores" icon={<ShoppingBagIcon sx={{minWidth : "5px", fontSize: "6vw" } } />} /></NavLink>
+               <BottomNavigationAction label="Stores" component={Link} href="/affiliates" icon={<ShoppingBagIcon />}></BottomNavigationAction>
                 <BottomNavigationAction label="Coupons" icon={<DiscountIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
                 <BottomNavigationAction label="Referral" icon={<ShareIcon sx={{minWidth : "5px" , fontSize: "6vw"}} />} />
                 
