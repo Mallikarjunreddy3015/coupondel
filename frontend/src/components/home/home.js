@@ -129,8 +129,8 @@ const Home = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                height: { xs: "150px", sm: "15vw", md: "13vw" },
-                width: { xs: "150px", sm: "15vw", md: "13vw" },
+                height: { xs: "auto", sm: "15vw", md: "13vw" },
+                width: { xs: "40vh", sm: "15vw", md: "13vw" },
                 boxShadow: " 5px 0 20px 3px #e7e7e7",
               }}
             >
