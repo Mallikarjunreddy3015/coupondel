@@ -23,7 +23,6 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
-  const drawerList = ["Log in", "My Profile", "About Us"];
 
   const drawerLists = [
     {

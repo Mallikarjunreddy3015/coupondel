@@ -7,12 +7,27 @@ import DiscountIcon from '@mui/icons-material/Discount';
 import ShareIcon from '@mui/icons-material/Share';
 import  {makeStyles}  from '@mui/styles';
 import { NavLink } from 'react-router-dom';
+import Home from "../home/home";
 
 
 const FootNav = () => {
 
     const [openDrawer , setOpenDrawer] = useState(false);
     const drawerList = ["Log in" , "My Profile"];
+    const drawerLists = [
+        {
+          name: "My Profile",
+          url: "#",
+        },
+        {
+          name: "About Us",
+          url: "coupondel.com",
+        },
+        {
+          name: "Log in",
+          url: "/login",
+        },
+      ];
     const [value , setValue] = useState(0);
 
     return(
@@ -43,13 +58,13 @@ const FootNav = () => {
                 sx={{padding:"0px",width:"20%",minWidth:"10px"}}
                 component ={NavLink} to="/"
                  label="Home" icon={<HomeIcon  />} />
-               <BottomNavigationAction  sx={{padding:"0px",width:"20%" ,minWidth:"10px"}} component={NavLink} label="Stores" to="/affiliates" icon={<ShoppingBagIcon/>}></BottomNavigationAction>
-                <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} label="Coupons" icon={<DiscountIcon  />} />
-                <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} label="Referral" icon={<ShareIcon />} />
+                    <BottomNavigationAction  sx={{padding:"0px",width:"20%" ,minWidth:"10px"}} component={NavLink} label="Stores" to="/affiliates" icon={<ShoppingBagIcon/>}></BottomNavigationAction>
+                    <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} component={NavLink} to="/" label="Coupons" icon={<DiscountIcon  />} />
+                    <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} component={NavLink} to="/" label="Referral" icon={<ShareIcon />} />
                 
-                <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} onClick={()=>{
-                    setOpenDrawer(!openDrawer)
-                }} label="Menu" icon={<MenuOpenIcon/>} />
+                    <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} onClick={()=>{
+                        setOpenDrawer(!openDrawer)
+                    }} label="Menu" icon={<MenuOpenIcon/>} />
 
 
             </BottomNavigation>
@@ -67,11 +82,11 @@ const FootNav = () => {
                 >
 
                 <List>
-                    {drawerList.map((li , index)=>{
+                    {drawerLists.map((li , index)=>{
                         return(
                             <span key={index}>
-                            <ListItemButton  sx={{width : "15rem"}}>
-                                {li}
+                            <ListItemButton conponent={NavLink} to={li.url} sx={{width : "15rem"}}>
+                                {li.name}
                             </ListItemButton>
                             </span>
                         )

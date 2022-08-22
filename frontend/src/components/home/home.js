@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-material-ui-carousel";
 import { Box } from "@mui/system";
 import { Button, Card, IconButton, InputBase } from "@mui/material";
@@ -43,6 +43,10 @@ const brandImages = [
 ];
 
 const Home = () => {
+  const [value , setValue] = useState(0) ;
+  const changeValue = () => {
+    setValue(1)
+  }
   return (
     <>
       <Carousel
@@ -96,6 +100,7 @@ const Home = () => {
             },
           }}
           variant="contained"
+          onClick={changeValue}
         >
           View All
         </Button>
@@ -324,3 +329,4 @@ const Home = () => {
 };
 
 export default Home;
+
