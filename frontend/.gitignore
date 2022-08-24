@@ -4,5 +4,5 @@
 /node_modules
 /build
 # testing
-/coverage
+
 /package-lock.json
