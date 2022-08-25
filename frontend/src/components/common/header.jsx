@@ -23,7 +23,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
-  const drawerList = ["Log in", "My Profile", "About Us"];
+  const [openSearch, setOpenSearch] = useState(null);
 
   const drawerLists = [
     {
@@ -46,6 +46,10 @@ const Header = () => {
   };
   const handleClose = () => {
     setOpenMenu(null);
+  };
+
+  const handleOpenSearch = () => {
+    console.log("clicked");
   };
 
   return (
@@ -167,7 +171,10 @@ const Header = () => {
           </List>
         </Drawer>
 
-        <IconButton sx={{ ml: "auto", display: { xs: "block", md: "none" } }}>
+        <IconButton
+          onClick={handleOpenSearch}
+          sx={{ ml: "auto", display: { xs: "block", md: "none" } }}
+        >
           <SearchIcon />
         </IconButton>
         <IconButton sx={{ display: { xs: "block", md: "none" } }}>

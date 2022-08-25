@@ -114,10 +114,10 @@ const Home = () => {
           width: "90vw",
           margin: "auto",
           "&>*:nth-of-type(5)": {
-            display: { xs: "none", md: "flex", sm: "flex" },
+            display: { xs: "flex", md: "flex", sm: "flex" },
           },
           "&>*:nth-of-type(6)": {
-            display: { xs: "none", md: "flex" },
+            display: { xs: "flex", md: "flex" },
           },
         }}
       >
@@ -187,10 +187,10 @@ const Home = () => {
           width: "90vw",
           margin: "auto",
           "&>*:nth-of-type(5)": {
-            display: { xs: "none", md: "flex", sm: "flex" },
+            display: { xs: "flex", md: "flex", sm: "flex" },
           },
           "&>*:nth-of-type(6)": {
-            display: { xs: "none", md: "flex" },
+            display: { xs: "flex", md: "flex" },
           },
         }}
       >
@@ -202,7 +202,7 @@ const Home = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                height: { xs: "150px", sm: "15vw", md: "13vw" },
+                height: { xs: "auto", sm: "15vw", md: "13vw" },
                 width: { xs: "150px", sm: "15vw", md: "13vw" },
                 boxShadow: " 0 0 20px 3px #e7e7e7",
               }}
