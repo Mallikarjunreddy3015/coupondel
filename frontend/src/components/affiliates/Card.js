@@ -10,7 +10,7 @@ const MCard=(props)=> {
   return (
  <Card sx={{ height:"150px" , width:{xs:"40%",sm:"18%"} ,maxWidth: 320 ,display:"inline-block",margin:"16px auto",objectFit:"fill" ,padding:"5px 0",
              borderRadius:"12px",
-             boxShadow:"0px 2px 12px gray",
+             boxShadow:"0px 2px 9px gray",
              transition:"all 0.3s",
              "&:hover":{
                transform:"scale(1.1)",
