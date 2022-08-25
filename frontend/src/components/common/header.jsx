@@ -23,6 +23,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
+  const [openSearch, setOpenSearch] = useState(null);
 
   const drawerLists = [
     {
@@ -45,6 +46,10 @@ const Header = () => {
   };
   const handleClose = () => {
     setOpenMenu(null);
+  };
+
+  const handleOpenSearch = () => {
+    console.log("clicked");
   };
 
   return (
@@ -101,10 +106,10 @@ const Header = () => {
           >
             {"Stores"}
           </NavLink>
-          <NavLink to="/coupones" underline="none" style={{color:"#1976d2"}}>
+          <NavLink to="/coupones" underline="none" style={{ color: "#1976d2" }}>
             {"Coupons"}
           </NavLink>
-          <NavLink to="/" underline="none" style={{color:"#1976d2"}}>
+          <NavLink to="/" underline="none" style={{ color: "#1976d2" }}>
             {"Refer & Earn"}
           </NavLink>
         </Box>
@@ -166,7 +171,10 @@ const Header = () => {
           </List>
         </Drawer>
 
-        <IconButton sx={{ ml: "auto", display: { xs: "block", md: "none" } }}>
+        <IconButton
+          onClick={handleOpenSearch}
+          sx={{ ml: "auto", display: { xs: "block", md: "none" } }}
+        >
           <SearchIcon />
         </IconButton>
         <IconButton sx={{ display: { xs: "block", md: "none" } }}>
