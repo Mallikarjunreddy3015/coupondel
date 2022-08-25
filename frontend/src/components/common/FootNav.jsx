@@ -1,37 +1,33 @@
-import {
-  Drawer,
-  List,
-  ListItemButton,
-  BottomNavigation,
-  BottomNavigationAction,
-  Link,
-} from "@mui/material";
-import React, { useState } from "react";
-import HomeIcon from "@mui/icons-material/Home";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
-import DiscountIcon from "@mui/icons-material/Discount";
-import ShareIcon from "@mui/icons-material/Share";
-import { makeStyles } from "@mui/styles";
-import { NavLink } from "react-router-dom";
+import {Drawer, List , ListItemButton, BottomNavigation, BottomNavigationAction, Link} from "@mui/material";
+import React , {useState} from "react";
+import HomeIcon from '@mui/icons-material/Home';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import DiscountIcon from '@mui/icons-material/Discount';
+import ShareIcon from '@mui/icons-material/Share';
+import  {makeStyles}  from '@mui/styles';
+import { NavLink } from 'react-router-dom';
+// import Home from "../home/home";
+
 
 const FootNav = () => {
-  const [openDrawer, setOpenDrawer] = useState(false);
-  const drawerList = ["Log in", "My Profile"];
-  const drawerLists = [
-    {
-      name: "My Profile",
-      url: "#",
-    },
-    {
-      name: "About Us",
-      url: "coupondel.com",
-    },
-    {
-      name: "Log in",
-      url: "/login",
-    },
-  ];
+    const [openDrawer , setOpenDrawer] = useState(false);
+    const drawerList = ["Log in" , "My Profile"];
+    const drawerLists = [
+        {
+          name: "My Profile",
+          url: "#",
+        },
+        {
+          name: "About Us",
+          url: "coupondel.com",
+        },
+        {
+          name: "Log in",
+          url: "/login",
+        },
+      ];
+    const [value , setValue] = useState(0);
 
     return(
         <>
