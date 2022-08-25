@@ -97,16 +97,16 @@ const Header = () => {
         >
           <NavLink
             to="/affiliates"
-            style={{ textDecoration: "none", color: "black" }}
+            style={{ textDecoration: "none", color: "#1976d2" }}
           >
             {"Stores"}
           </NavLink>
-          <Link href="#" underline="none">
+          <NavLink to="/coupones" underline="none" style={{color:"#1976d2"}}>
             {"Coupons"}
-          </Link>
-          <Link href="#" underline="none">
+          </NavLink>
+          <NavLink to="/" underline="none" style={{color:"#1976d2"}}>
             {"Refer & Earn"}
-          </Link>
+          </NavLink>
         </Box>
 
         <Box sx={{ mr: 1, display: { sm: "none", md: "flex", xs: "none" } }}>
