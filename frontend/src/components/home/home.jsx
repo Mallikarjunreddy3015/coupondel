@@ -167,6 +167,8 @@ const Home = () => {
         <h1>Top Coupons</h1>
 
         <Button
+        component={NavLink}
+        to="/coupons"
           sx={{
             boxShadow: "none",
             "&:hover": {

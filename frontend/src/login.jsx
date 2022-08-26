@@ -1,12 +1,20 @@
 import { Button, IconButton, InputBase, TextField } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from "./Images/logo.png";
 import GoogleIcon from "@mui/icons-material/Google";
 import { Link, NavLink } from "react-router-dom";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleClick=()=>{
+    navigate("/");
+  }
+
   return (
     <>
       <Container
@@ -15,17 +23,37 @@ const Login = () => {
         }}
       >
         <Box
-          sx={{
-            width: "150px",
-            height: "45px",
-            mt: 6,
-            mb: 3,
-          }}
-          component="img"
-          src={Logo}
-          alt="coupodel"
-          draggable="false"
-        />
+        >
+          <Box
+            sx={{
+              width: "150px",
+              height: "45px",
+              mt: 6,
+              mb: 3,
+            }}
+            component="img"
+            src={Logo}
+            alt="coupodel"
+            draggable="false"
+          />
+
+          <IconButton
+           
+            onClick={handleClick}
+            sx={{
+              position: 'absolute',
+              mt: 6,
+              mb: 3,
+              ml:20,
+            }}
+          >
+
+            <CloseIcon />
+
+          </IconButton>
+
+        </Box>
+
 
         <Box
           component="form"
