@@ -27,7 +27,7 @@ const Header = () => {
 
   const drawerLists = [
     {
-      name: "My Profile",
+      name: "My Account",
       url: "#",
     },
     {
@@ -196,8 +196,9 @@ const Header = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <MenuItem onClick={handleClose}>Profile</MenuItem>
-          <MenuItem onClick={handleClose}>My Account</MenuItem>
+          <MenuItem component={NavLink} to="/account" onClick={handleClose}>
+            My Account
+          </MenuItem>
           <MenuItem onClick={handleClose}>Log out</MenuItem>
         </Menu>
       </AppBar>

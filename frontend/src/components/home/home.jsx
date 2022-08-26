@@ -42,11 +42,13 @@ const brandImages = [
   },
 ];
 
+const ChangeValue = () => {
+  const [value, setValue] = useState(0);
+
+  setValue(1);
+};
+
 const Home = () => {
-  const [value , setValue] = useState(0) ;
-  const changeValue = () => {
-    setValue(1)
-  }
   return (
     <>
       <Carousel
@@ -60,10 +62,9 @@ const Home = () => {
         swipe
       >
         {images.map((image, index) => (
-          <Box component={NavLink}key={index} to="/">
+          <Box component={NavLink} key={index} to="/">
             <Box
               component="img"
-              
               sx={{
                 display: "block",
                 margin: " 0 auto",
@@ -100,7 +101,7 @@ const Home = () => {
             },
           }}
           variant="contained"
-          onClick={changeValue}
+          onClick={ChangeValue}
         >
           View All
         </Button>
@@ -136,7 +137,7 @@ const Home = () => {
                 justifyContent: "center",
                 height: { xs: "auto", sm: "15vw", md: "13vw" },
                 width: { xs: "40vw", sm: "15vw", md: "13vw" },
-                boxShadow: " 5px 0 20px 3px #e7e7e7",
+                boxShadow: " 0 0 20px 3px #e7e7e7",
               }}
             >
               <img
@@ -167,8 +168,8 @@ const Home = () => {
         <h1>Top Coupons</h1>
 
         <Button
-        component={NavLink}
-        to="/coupons"
+          component={NavLink}
+          to="/coupons"
           sx={{
             boxShadow: "none",
             "&:hover": {
@@ -331,4 +332,4 @@ const Home = () => {
 };
 
 export default Home;
-
+export { ChangeValue };

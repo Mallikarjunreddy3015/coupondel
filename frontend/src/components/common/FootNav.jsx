@@ -15,13 +15,13 @@ import ShareIcon from "@mui/icons-material/Share";
 import { makeStyles } from "@mui/styles";
 import { NavLink } from "react-router-dom";
 // import Home from "../home/home";
+import { ChangeValue } from "../home/home";
 
 const FootNav = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
-  const drawerList = ["Log in", "My Profile"];
   const drawerLists = [
     {
-      name: "My Profile",
+      name: "My Account",
       url: "#",
     },
     {
