@@ -6,19 +6,20 @@ import GoogleIcon from "@mui/icons-material/Google";
 import { Link, NavLink } from "react-router-dom";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 
-const Login = () => {
+const Signup = () => {
   return (
     <>
       <Container
         sx={{
           width: { xs: "100%", sm: "60%", md: "40%" },
+          mb: 3,
         }}
       >
         <Box
           sx={{
             width: "150px",
             height: "45px",
-            mt: 6,
+            mt: 3,
             mb: 3,
           }}
           component="img"
@@ -26,18 +27,16 @@ const Login = () => {
           alt="coupodel"
           draggable="false"
         />
-
         <Box
           component="form"
           autoComplete="off"
           sx={{
-            height: "70vh",
+            height: "90vh",
             padding: { md: "50px", xs: "20px" },
             boxShadow: "0 0 15px 10px #e7e7e7",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            borderRadius: "4px",
           }}
         >
           <p
@@ -48,7 +47,7 @@ const Login = () => {
               fontSize: "1.4rem",
             }}
           >
-            Sign in to your account
+            Create your account
           </p>
           <TextField
             sx={{
@@ -57,24 +56,28 @@ const Login = () => {
                 border: "none",
               },
             }}
+            type="text"
+            label="Full name"
+            required
+          />
+          <TextField
+            sx={{
+              "&:hover": {
+                outline: "none",
+                border: "none",
+              },
+            }}
+            type="email"
             label="Email or phone"
             required
           />
-          <TextField label="Password" variant="outlined" />
-          <Box
-            sx={{
-              color: "dodgerblue",
-              display: "block",
-              width: "130px",
-              "&:hover": {
-                textDecoration: "underline",
-              },
-            }}
-            component={NavLink}
-            to="/"
-          >
-            Forgot password
-          </Box>
+          <TextField
+            type="password"
+            label="Password"
+            variant="outlined"
+            required
+          />
+          <TextField label="Confirm Password" variant="outlined" required />
           <Button
             sx={{
               textTransform: "none",
@@ -105,7 +108,7 @@ const Login = () => {
               },
             }}
           >
-            Login using Google
+            Sign up using Google
           </Button>
           <Button
             disableElevation
@@ -120,7 +123,7 @@ const Login = () => {
               },
             }}
           >
-            Login using Facebook
+            Sign up using Facebook
           </Button>
         </Box>
 
@@ -131,9 +134,9 @@ const Login = () => {
             mt: 2,
           }}
         >
-          <p>Don't have an Account ? </p>
-          <Box sx={{ color: "blue", ml: 1 }} to="/signup" component={NavLink}>
-            Sign up
+          <p>Already have an Account ?</p>
+          <Box sx={{ color: "blue", ml: 1 }} to="/login" component={NavLink}>
+            Log in
           </Box>
         </Box>
       </Container>
@@ -141,4 +144,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

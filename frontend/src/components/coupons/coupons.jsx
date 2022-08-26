@@ -7,13 +7,13 @@ import { CouponeApi } from './CouponeApi'
 const Coupons = () => {
   const renderCoupon = CouponeApi.map((curr,index)=>{
     console.log(curr)
-    return<CouponCard key={index} img={curr.img} heading={curr.heading}/>
+    return<CouponCard key={index} img={curr.img} discount={curr.discount} heading={curr.heading} expiryDate={curr.expiryDate} category={curr.category}/>
     
   })
   return (
     <>
     <Container maxWidth="xl" sx={{display:"flex",flexWrap:"wrap",mt:12,mb:10,flexDirection:"row"}}>
-      <Box sx={{bgcolor:"gray",width:{xs:"100%",md:"15%"},height:{xs:"70px",md:"100vh"}}}></Box>
+      <Box sx={{bgcolor:"gray",width:{xs:"100%",md:"15%"},height:{xs:"70px",md:"auto"}}}></Box>
       <Box sx={{display:"flex",flexWrap:"wrap",width:{xs:"100%",md:"85%"}}}>{renderCoupon}</Box>
       
     </Container>
