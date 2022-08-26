@@ -6,7 +6,6 @@ import { CouponeApi } from './CouponeApi'
 
 const Coupons = () => {
   const renderCoupon = CouponeApi.map((curr,index)=>{
-    console.log(curr)
     return<CouponCard key={index} img={curr.img} discount={curr.discount} heading={curr.heading} expiryDate={curr.expiryDate} category={curr.category}/>
     
   })
