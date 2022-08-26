@@ -59,7 +59,7 @@ const FootNav = () => {
                  label="Home" icon={<HomeIcon  />} />
                     <BottomNavigationAction  sx={{padding:"0px",width:"20%" ,minWidth:"10px"}} component={NavLink} label="Stores" to="/affiliates" icon={<ShoppingBagIcon/>}></BottomNavigationAction>
                     <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} component={NavLink} to="/coupons" label="Coupons" icon={<DiscountIcon  />} />
-                    <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} component={NavLink} to="/" label="Referral" icon={<ShareIcon />} />
+                    <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} component={NavLink} to="/refer" label="Referral" icon={<ShareIcon />} />
                 
                     <BottomNavigationAction sx={{padding:"0px",width:"20%",minWidth:"10px"}} onClick={()=>{
                         setOpenDrawer(!openDrawer)

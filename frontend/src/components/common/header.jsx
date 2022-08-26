@@ -24,7 +24,11 @@ const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
   const [openSearch, setOpenSearch] = useState(null);
-
+  const [value,setValue]= useState(0);
+  const RemoveActive=(event)=>{
+      event.currentTarget.classList.remove("active")
+      console.log("removing");
+  }
   const drawerLists = [
     {
       name: "My Profile",
@@ -80,7 +84,7 @@ const Header = () => {
           <MenuIcon />
         </IconButton>
 
-        <NavLink to="/">
+        <NavLink to="/" className={"ignoreActive"} >
           <Box
             component="img"
             sx={{
@@ -102,14 +106,16 @@ const Header = () => {
         >
           <NavLink
             to="/affiliates"
-            style={{ textDecoration: "none", color: "#1976d2" }}
+            id="0"
+            style={{ textDecoration: "none", color: "#1976d2",padding:"15px" }}
+            // onClick={handleShadow}
           >
             {"Stores"}
           </NavLink>
-          <NavLink to="/coupons" underline="none" style={{ color: "#1976d2" }}>
+          <NavLink id="1" to="/coupons" underline="none" style={{ color: "#1976d2",padding:"15px" }}>
             {"Coupons"}
           </NavLink>
-          <NavLink to="/" underline="none" style={{ color: "#1976d2" }}>
+          <NavLink to="/refer" id="2" underline="none" style={{ color: "#1976d2",padding:"15px" }}>
             {"Refer & Earn"}
           </NavLink>
         </Box>
