@@ -106,7 +106,7 @@ const Header = () => {
           >
             {"Stores"}
           </NavLink>
-          <NavLink to="/coupones" underline="none" style={{ color: "#1976d2" }}>
+          <NavLink to="/coupons" underline="none" style={{ color: "#1976d2" }}>
             {"Coupons"}
           </NavLink>
           <NavLink to="/" underline="none" style={{ color: "#1976d2" }}>

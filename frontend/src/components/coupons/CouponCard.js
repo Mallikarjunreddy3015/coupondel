@@ -5,15 +5,21 @@ import  axios  from 'axios';
 const CouponCard = (props) => {
 
   return (
-    <Box sx={{display:"inline-block",width:{xs:"100%",sm:"45%",md:"32%"},margin:"8px auto",height:"200px" ,transition:"all 0.3s","&:hover":{
+    <Box sx={{
+    width:{xs:"100%",sm:"45%",md:"32%"},
+    padding:"0 8px",
+    marginBottom:"8px",
+    marginTop:"8px",
+    flex:{xs:"0 0 100%",sm:"0 0 50%",md:"0 0 33.33%",lr:"0 0 25%"},
+    transition:"all 0.3s","&:hover":{
       transform:"scale(1.05)"
     }}}>
     <Card sx={{
         border:"0.1px dashed #0A1535",
         display:"flex",
-        minHeight:"200px",
         padding:"8px 16px",
         flexWrap:'wrap',
+        height:"200px",
         boxShadow:"-2px 6px 6px #66b3ff41 "
     }} >
             <CardMedia
