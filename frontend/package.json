@@ -1,0 +1,39 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "Mallikarjuna",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@flaticon/flaticon-uicons": "^1.7.0",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.10.0",
+    "@mui/styled-engine-sc": "^5.10.0",
+    "@mui/styles": "^5.9.3",
+    "axios": "^0.27.2",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0",
+    "sweetalert": "^2.1.2"
+
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.1",
+    "vite": "^3.0.7",
+    "redux-devtools": "^3.7.0"
+  }
+}
