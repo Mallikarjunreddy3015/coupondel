@@ -12,6 +12,13 @@ a{
 .bnavigation{
     padding: 0px;
 }
+ .active{
+    border-bottom:3px solid #1976d29c;
+    border-radius: 3px;
+}
+.ignoreActive{
+    border-bottom:0px solid #1976d29c; 
+}
  /* <AppBar position="fixed"  color="primary"
                 sx={{ top : "auto", bottom : 0 ,
                 display : {xs : "block" , md : "none" , sm : "none"},

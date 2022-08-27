@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@mui/system";
 import Affiliates from "./components/affiliates/affiliates.jsx";
-import Header from "./components/common/Header.jsx";
+import Header from "./components/common/header.jsx";
 import FootNav from "./components/common/FootNav.jsx";
 import Footer from "./components/common/Footer.jsx";
 import Home from "./components/home/home.jsx";
@@ -12,6 +12,8 @@ import { BrowserRouter  as Router, Route, Routes,Outlet } from "react-router-dom
 const AppLayout = () => (
   <>
     <Header />
+import UserAccount from "./components/account/useraccount.jsx";
+import Refer from "./components/refer/refer.jsx";
 
     <Outlet />
 

@@ -41,7 +41,7 @@ const FootNav = (props) => {
   const drawerList = ["Log in", "My Profile"];
   const drawerLists = [
     {
-      name: "My Profile",
+      name: "My Account",
       url: "#",
     },
     {

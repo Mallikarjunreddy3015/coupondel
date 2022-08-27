@@ -36,7 +36,7 @@ const Header = () => {
 
   const drawerLists = [
     {
-      name: "My Profile",
+      name: "My Account",
       url: "#",
     },
     {
@@ -111,14 +111,16 @@ const Header = () => {
         >
           <NavLink
             to="/affiliates"
-            style={{ textDecoration: "none", color: "#1976d2" }}
+            id="0"
+            style={{ textDecoration: "none", color: "#1976d2",padding:"15px" }}
+            // onClick={handleShadow}
           >
             {"Stores"}
           </NavLink>
-          <NavLink to="/coupons" underline="none" style={{ color: "#1976d2" }}>
+          <NavLink id="1" to="/coupons" underline="none" style={{ color: "#1976d2",padding:"15px" }}>
             {"Coupons"}
           </NavLink>
-          <NavLink to="/" underline="none" style={{ color: "#1976d2" }}>
+          <NavLink to="/refer" id="2" underline="none" style={{ color: "#1976d2",padding:"15px" }}>
             {"Refer & Earn"}
           </NavLink>
         </Box>
@@ -205,8 +207,9 @@ const Header = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <MenuItem onClick={handleClose}>Profile</MenuItem>
-          <MenuItem onClick={handleClose}>My Account</MenuItem>
+          <MenuItem component={NavLink} to="/account" onClick={handleClose}>
+            My Account
+          </MenuItem>
           <MenuItem onClick={handleClose}>Log out</MenuItem>
         </Menu>
       </AppBar>
