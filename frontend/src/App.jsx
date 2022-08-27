@@ -8,12 +8,13 @@ import {  NavLink } from "react-router-dom";
 import Coupons from "./components/coupons/coupons.jsx";
 import Login from "./login.jsx";
 import Signup from "./signup.jsx";
+import UserAccount from "./components/account/useraccount.jsx";
+import Refer from "./components/refer/refer.jsx";
 import { BrowserRouter  as Router, Route, Routes,Outlet } from "react-router-dom";
 const AppLayout = () => (
   <>
     <Header />
-import UserAccount from "./components/account/useraccount.jsx";
-import Refer from "./components/refer/refer.jsx";
+
 
     <Outlet />
 
@@ -35,6 +36,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/affiliates" element={<Affiliates />} />
           <Route path="/coupons" element={<Coupons />} />
+          <Route path="/account" element={<UserAccount />} />
+          <Route path="/refer" element={<Refer/>}/>
 
         </Route>
 

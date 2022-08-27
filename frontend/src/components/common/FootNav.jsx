@@ -103,7 +103,7 @@ useEffect(()=>{
         <BottomNavigationAction
           sx={{ padding: "0px", width: "20%", minWidth: "10px" }}
           component={NavLink}
-          to="/"
+          to="/refer"
           label="Referral"
           icon={<ShareIcon />}
         />

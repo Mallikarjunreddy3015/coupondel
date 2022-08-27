@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Carousel from "react-material-ui-carousel";
 import { Box } from "@mui/system";
-import { Button, Card, IconButton, InputBase } from "@mui/material";
+import { Button, Card, IconButton, InputBase} from "@mui/material";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import firstImage from "../../Images/first.png";
 import { NavLink } from "react-router-dom";
 import activeChange from "../../action/appAction"
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 
 var images = [
@@ -44,13 +44,6 @@ const brandImages = [
     url: "https://asset20.ckassets.com/resources/image/stores/amazon-1602658695.png",
   },
 ];
-
-const ChangeValue = () => {
-  const [value, setValue] = useState(0);
-
-  setValue(1);
-};
-
 const Home = () => {
   const [value , setValue] = useState(0) ;
   const dispatch = useDispatch();
@@ -109,7 +102,7 @@ const Home = () => {
             },
           }}
           variant="contained"
-          onClick={ChangeValue}
+          onClick={changeValue}
         >
           View All
         </Button>
@@ -251,12 +244,13 @@ const Home = () => {
       >
         <h1>More ways to earn</h1>
         <IconButton
+        onClick={()=>dispatch(activeChange(3))}
           sx={{
             backgroundColor: "#e7e7e7",
             color: "#000",
           }}
         >
-          <KeyboardArrowRightRoundedIcon />
+          <NavLink to="/refer" > <KeyboardArrowRightRoundedIcon /> </NavLink>
         </IconButton>
       </Box>
       <Box
@@ -341,4 +335,3 @@ const Home = () => {
 };
 
 export default Home;
-export { ChangeValue };

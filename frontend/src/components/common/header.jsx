@@ -27,7 +27,11 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const [openSearch, setOpenSearch] = useState(null);
 
-
+  const [value,setValue]= useState(0);
+  const RemoveActive=(event)=>{
+      event.currentTarget.classList.remove("active")
+      console.log("removing");
+  }
   const dispatch = useDispatch();
 
   const changeValue = () => {
@@ -89,7 +93,7 @@ const Header = () => {
           <MenuIcon />
         </IconButton>
 
-        <NavLink onClick={changeValue}  to="/">
+        <NavLink className={"ignoreActive"} onClick={changeValue}  to="/">
           <Box
             component="img"
             sx={{
