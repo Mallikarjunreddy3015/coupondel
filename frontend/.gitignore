@@ -10,7 +10,6 @@
 
 
 # production
-/dist
 
 # misc
 .env.local
