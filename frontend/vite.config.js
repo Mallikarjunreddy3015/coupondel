@@ -10,7 +10,6 @@ dns.setDefaultResultOrder('verbatim')
 
 
 export default defineConfig({
- base : "/coupondel/",
   plugins: [
     react(),
 
