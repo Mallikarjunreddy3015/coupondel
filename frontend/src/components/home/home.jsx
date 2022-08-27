@@ -5,6 +5,8 @@ import { Button, Card, IconButton, InputBase } from "@mui/material";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import firstImage from "../../Images/first.png";
 import { NavLink } from "react-router-dom";
+import activeChange from "../../action/appAction"
+import { useSelector, useDispatch } from "react-redux";
 
 var images = [
   {
@@ -44,8 +46,9 @@ const brandImages = [
 
 const Home = () => {
   const [value , setValue] = useState(0) ;
+  const dispatch = useDispatch();
   const changeValue = () => {
-    setValue(1)
+    dispatch(activeChange(1))
   }
   return (
     <>
@@ -176,6 +179,7 @@ const Home = () => {
             },
           }}
           variant="contained"
+          onClick={()=> dispatch(activeChange(2))}
         >
           View All
         </Button>

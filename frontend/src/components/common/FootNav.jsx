@@ -14,10 +14,30 @@ import DiscountIcon from "@mui/icons-material/Discount";
 import ShareIcon from "@mui/icons-material/Share";
 import { makeStyles } from "@mui/styles";
 import { NavLink } from "react-router-dom";
-// import Home from "../home/home";
+import { connect } from "react-redux";
+import { useEffect } from "react";
+import activeChange from "../../action/appAction"
+import { useSelector, useDispatch } from "react-redux";
 
-const FootNav = () => {
+const mapStateToProps = state => {
+  return {
+    value: state.app.activeTab
+  };
+};
+
+
+const FootNav = (props) => {
+  
+
   const [openDrawer, setOpenDrawer] = useState(false);
+  const[value, setValue] = useState(0);
+
+  const dispatch = useDispatch();
+
+  const changeValue = () => {
+   
+  }
+
   const drawerList = ["Log in", "My Profile"];
   const drawerLists = [
     {
@@ -33,8 +53,10 @@ const FootNav = () => {
       url: "/login",
     },
   ];
-  const [value, setValue] = useState(0);
-
+useEffect(()=>{
+  setValue(props.value)
+},[props.value])
+ 
   return (
     <>
       <BottomNavigation
@@ -53,7 +75,8 @@ const FootNav = () => {
         showLabels
         value={value}
         onChange={(event, newValue) => {
-          setValue(newValue);
+        setValue(newValue)
+        dispatch(activeChange(newValue))
         }}
       >
         <BottomNavigationAction
@@ -126,4 +149,5 @@ const FootNav = () => {
   );
 };
 
-export default FootNav;
+
+export default connect(mapStateToProps)(FootNav);

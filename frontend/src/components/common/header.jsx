@@ -19,11 +19,20 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../Images/logo.png";
 import { NavLink } from "react-router-dom";
+import activeChange from "../../action/appAction"
+import { useSelector, useDispatch } from "react-redux";
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
   const [openSearch, setOpenSearch] = useState(null);
+
+
+  const dispatch = useDispatch();
+
+  const changeValue = () => {
+    dispatch(activeChange(0))
+  }
 
   const drawerLists = [
     {
@@ -80,7 +89,7 @@ const Header = () => {
           <MenuIcon />
         </IconButton>
 
-        <NavLink to="/">
+        <NavLink onClick={changeValue}  to="/">
           <Box
             component="img"
             sx={{
