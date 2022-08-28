@@ -12,12 +12,11 @@ import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import DiscountIcon from "@mui/icons-material/Discount";
 import ShareIcon from "@mui/icons-material/Share";
-import { makeStyles } from "@mui/styles";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import { useEffect } from "react";
 import activeChange from "../../action/appAction"
-import { useSelector, useDispatch } from "react-redux";
+import {  useDispatch } from "react-redux";
 
 const mapStateToProps = state => {
   return {

@@ -1,4 +1,5 @@
-import { Box, ButtonGroup, Divider, Typography } from "@mui/material";
+import  Box  from "@mui/material/Box";
+import ButtonGroup  from "@mui/material/ButtonGroup";
 import { Container } from "@mui/system";
 import React from "react";
 import CouponCard from "./CouponCard";

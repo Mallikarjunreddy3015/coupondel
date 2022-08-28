@@ -1,7 +1,10 @@
 import { useState } from "react";
 import Carousel from "react-material-ui-carousel";
-import { Box } from "@mui/system";
-import { Button, Card, IconButton, InputBase} from "@mui/material";
+import  Box  from "@mui/system/Box";
+import  Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import IconButton from "@mui/material/IconButton";
+import InputBase from "@mui/material/InputBase";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import firstImage from "../../Images/first.png";
 import { NavLink } from "react-router-dom";

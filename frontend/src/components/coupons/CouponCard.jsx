@@ -1,7 +1,9 @@
-import { Card, CardContent, CardMedia, Typography } from '@mui/material'
+import  Card from '@mui/material/Card'
+import CardMedia from '@mui/material/CardMedia'
+import  Typography  from '@mui/material/Typography'
 import React ,{useEffect}from 'react'
 import { Box } from '@mui/system';
-import  axios  from 'axios';
+
 const CouponCard = (props) => {
 
   return (

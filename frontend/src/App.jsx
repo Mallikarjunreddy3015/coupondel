@@ -1,10 +1,8 @@
-import { ThemeProvider } from "@mui/system";
 import Affiliates from "./components/affiliates/affiliates.jsx";
 import Header from "./components/common/header.jsx";
 import FootNav from "./components/common/FootNav.jsx";
 import Footer from "./components/common/Footer.jsx";
 import Home from "./components/home/home.jsx";
-import {  NavLink } from "react-router-dom";
 import Coupons from "./components/coupons/coupons.jsx";
 import Login from "./login.jsx";
 import Signup from "./signup.jsx";

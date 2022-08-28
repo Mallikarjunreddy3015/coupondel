@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { Typography, Card } from '@mui/material';
-import { Box, Container } from '@mui/system';
-import axios from "axios"
+import Typography from '@mui/material/Typography';
+import Container  from '@mui/system/Container';
 import MCard from "./Card"
 import Amazon from "../../images/amazon.png"
 const carddata ={
