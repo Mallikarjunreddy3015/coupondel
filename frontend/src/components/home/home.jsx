@@ -1,16 +1,15 @@
 import { useState } from "react";
 import Carousel from "react-material-ui-carousel";
-import  Box  from "@mui/system/Box";
-import  Button from "@mui/material/Button";
+import Box from "@mui/system/Box";
+import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 import firstImage from "../../Images/first.png";
 import { NavLink } from "react-router-dom";
-import activeChange from "../../action/appAction"
+import activeChange from "../../action/appAction";
 import { useDispatch } from "react-redux";
-
 
 var images = [
   {
@@ -48,11 +47,11 @@ const brandImages = [
   },
 ];
 const Home = () => {
-  const [value , setValue] = useState(0) ;
+  const [value, setValue] = useState(0);
   const dispatch = useDispatch();
   const changeValue = () => {
-    dispatch(activeChange(1))
-  }
+    dispatch(activeChange(1));
+  };
   return (
     <>
       <Carousel
@@ -181,7 +180,7 @@ const Home = () => {
             },
           }}
           variant="contained"
-          onClick={()=> dispatch(activeChange(2))}
+          onClick={() => dispatch(activeChange(2))}
         >
           View All
         </Button>
@@ -247,13 +246,15 @@ const Home = () => {
       >
         <h1>More ways to earn</h1>
         <IconButton
-        onClick={()=>dispatch(activeChange(3))}
+          component={NavLink}
+          onClick={() => dispatch(activeChange(3))}
           sx={{
             backgroundColor: "#e7e7e7",
             color: "#000",
           }}
+          to="/refer"
         >
-          <NavLink to="/refer" > <KeyboardArrowRightRoundedIcon /> </NavLink>
+          <KeyboardArrowRightRoundedIcon />
         </IconButton>
       </Box>
       <Box
