@@ -10,9 +10,9 @@ import CloseIcon from "@mui/icons-material/Close";
 const Login = () => {
   const navigate = useNavigate();
 
-  const handleClick=()=>{
+  const handleClick = () => {
     navigate("/");
-  }
+  };
 
   return (
     <>
@@ -21,8 +21,7 @@ const Login = () => {
           width: { xs: "100%", sm: "60%", md: "40%" },
         }}
       >
-        <Box
-        >
+        <Box sx={{ position: "relative" }}>
           <Box
             sx={{
               width: "150px",
@@ -37,22 +36,16 @@ const Login = () => {
           />
 
           <IconButton
-           
             onClick={handleClick}
             sx={{
-              position: 'absolute',
-              mt: 6,
-              mb: 3,
-              ml:20,
+              position: "absolute",
+              right: 0,
+              top: "40%",
             }}
           >
-
             <CloseIcon />
-
           </IconButton>
-
         </Box>
-
 
         <Box
           component="form"
@@ -65,6 +58,7 @@ const Login = () => {
             flexDirection: "column",
             justifyContent: "space-between",
             borderRadius: "4px",
+            backgroundColor: "#fff",
           }}
         >
           <p
@@ -105,9 +99,9 @@ const Login = () => {
           <Button
             sx={{
               textTransform: "none",
-              backgroundColor: "dodgerblue",
+              backgroundColor: "#1A73E8",
               "&:hover": {
-                backgroundColor: "dodgerblue",
+                backgroundColor: "#1A73E8",
               },
             }}
             type="submit"

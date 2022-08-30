@@ -36,7 +36,7 @@ const FootNav = (props) => {
   const drawerLists = [
     {
       name: "My Account",
-      url: "#",
+      url: "/account",
     },
     {
       name: "About Us",
@@ -104,7 +104,12 @@ const FootNav = (props) => {
         />
 
         <BottomNavigationAction
-          sx={{ padding: "0px", width: "20%", minWidth: "10px" }}
+          sx={{
+            padding: "0px",
+            width: "20%",
+            minWidth: "10px",
+            display: "none",
+          }}
           onClick={() => {
             setOpenDrawer(!openDrawer);
           }}
