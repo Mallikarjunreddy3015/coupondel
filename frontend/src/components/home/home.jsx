@@ -52,6 +52,7 @@ const StyledCard = styled(Card)`
   box-shadow: none;
   border-radius: 8px;
   transition: 0.25s;
+  box-shadow: 5px 5px 15px 0.8px #1a73e83a;
   :hover {
     box-shadow: 5px 5px 15px 0.8px #1a73e83a;
     transform: scale(1.01);
@@ -73,7 +74,7 @@ const Home = () => {
     <div className="">
       <Carousel
         sx={{
-          mt: 15,
+          mt: 13,
         }}
         interval={6000}
         animation="fade"
@@ -109,7 +110,7 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <h1>Top Stores</h1>
+        <h2>Top Stores</h2>
 
         <StyledButton
           component={NavLink}
@@ -193,7 +194,7 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <h1>Top Coupons</h1>
+        <h2>Top Coupons</h2>
 
         <StyledButton
           component={NavLink}
@@ -270,7 +271,7 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <h1>More ways to earn</h1>
+        <h2>More ways to earn</h2>
         <IconButton
           component={NavLink}
           onClick={() => dispatch(activeChange(3))}
@@ -308,7 +309,7 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        <h1>How Coupondel works</h1>
+        <h2>How Coupondel works</h2>
         <IconButton
           sx={{
             backgroundColor: "#e7e7e7",
@@ -343,7 +344,7 @@ const Home = () => {
           alignItems: { md: "center", sm: "center" },
         }}
       >
-        <h1>Subscribe to us</h1>
+        <h2>Subscribe to us</h2>
         <Box
           sx={{
             backgroundColor: "#d4d4d4",
