@@ -1,15 +1,14 @@
 import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box"
-import IconButton from "@mui/material/IconButton"
-import InputBase from "@mui/material/InputBase"
-import Drawer from "@mui/material/Drawer"
-import Button from "@mui/material/Button"
-import List from "@mui/material/List"
-import ListItemButton from "@mui/material/ListItemButton"
-import MenuItem from "@mui/material/MenuItem"
-import Menu from "@mui/material/Menu"
-
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
+import InputBase from "@mui/material/InputBase";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import List from "@mui/material/List";
+import ListItemButton from "@mui/material/ListItemButton";
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
 
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -17,7 +16,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../Images/logo.png";
 import { NavLink } from "react-router-dom";
-import activeChange from "../../action/appAction"
+import activeChange from "../../action/appAction";
 import { useSelector, useDispatch } from "react-redux";
 
 const Header = () => {
@@ -25,16 +24,11 @@ const Header = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const [openSearch, setOpenSearch] = useState(null);
 
-  const [value,setValue]= useState(0);
-  const RemoveActive=(event)=>{
-      event.currentTarget.classList.remove("active")
-      console.log("removing");
-  }
   const dispatch = useDispatch();
 
   const changeValue = () => {
-    dispatch(activeChange(0))
-  }
+    dispatch(activeChange(0));
+  };
 
   const drawerLists = [
     {
@@ -91,7 +85,7 @@ const Header = () => {
           <MenuIcon />
         </IconButton>
 
-        <NavLink className={"ignoreActive"} onClick={changeValue}  to="/">
+        <NavLink className={"ignoreActive"} onClick={changeValue} to="/">
           <Box
             component="img"
             sx={{
@@ -112,17 +106,34 @@ const Header = () => {
           }}
         >
           <NavLink
+            className="navTab"
             to="/affiliates"
             id="0"
-            style={{ textDecoration: "none", color: "#1976d2",padding:"15px" }}
+            style={{
+              textDecoration: "none",
+              color: "#1976d2",
+              padding: "15px",
+            }}
             // onClick={handleShadow}
           >
             {"Stores"}
           </NavLink>
-          <NavLink id="1" to="/coupons" underline="none" style={{ color: "#1976d2",padding:"15px" }}>
+          <NavLink
+            id="1"
+            className="navTab"
+            to="/coupons"
+            underline="none"
+            style={{ color: "#1976d2", padding: "15px" }}
+          >
             {"Coupons"}
           </NavLink>
-          <NavLink to="/refer" id="2" underline="none" style={{ color: "#1976d2",padding:"15px" }}>
+          <NavLink
+            to="/refer"
+            className="navTab"
+            id="2"
+            underline="none"
+            style={{ color: "#1976d2", padding: "15px" }}
+          >
             {"Refer & Earn"}
           </NavLink>
         </Box>
@@ -145,7 +156,7 @@ const Header = () => {
           <Button
             component={NavLink}
             to="/login"
-            sx={{ mr: 2 }}
+            sx={{ mr: 2, textTransform: "none" }}
             variant="outlined"
           >
             Log in

@@ -8,11 +8,15 @@ import Login from "./login.jsx";
 import Signup from "./signup.jsx";
 import UserAccount from "./components/account/useraccount.jsx";
 import Refer from "./components/refer/refer.jsx";
-import { BrowserRouter  as Router, Route, Routes,Outlet } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Outlet,
+} from "react-router-dom";
 const AppLayout = () => (
   <>
     <Header />
-
 
     <Outlet />
 
@@ -23,23 +27,20 @@ const AppLayout = () => (
 const App = () => {
   return (
     <>
-    <Router>
-      <Routes>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
 
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-
-        <Route element={<AppLayout/>}>
-
-          <Route path="/" element={<Home />} />
-          <Route path="/affiliates" element={<Affiliates />} />
-          <Route path="/coupons" element={<Coupons />} />
-          <Route path="/account" element={<UserAccount />} />
-          <Route path="/refer" element={<Refer/>}/>
-
-        </Route>
-
-      </Routes></Router>
+          <Route element={<AppLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/affiliates" element={<Affiliates />} />
+            <Route path="/coupons" element={<Coupons />} />
+            <Route path="/account" element={<UserAccount />} />
+            <Route path="/refer" element={<Refer />} />
+          </Route>
+        </Routes>
+      </Router>
     </>
   );
 };

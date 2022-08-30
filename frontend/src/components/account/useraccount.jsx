@@ -1,24 +1,24 @@
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
-import  ListItemButton  from "@mui/material/ListItemButton";
+import ListItemButton from "@mui/material/ListItemButton";
 import { NavLink } from "react-router-dom";
 
 const accountLists = [
   {
     name: "Profile",
-    url: "/profile",
+    url: "/account",
   },
   {
     name: "My Earnings",
-    url: "/profile",
+    url: "/account",
   },
   {
     name: "Payments",
-    url: "/profile",
+    url: "/account",
   },
   {
     name: "My Questions and Answers",
-    url: "/profile",
+    url: "/account",
   },
 ];
 
@@ -41,11 +41,11 @@ const UserAccount = () => {
             mt: 10,
             backgroundColor: "#d4d4d4",
             width: "20%",
-            display: "flex",
+            display: { md: "flex", xs: "none" },
             flexDirection: "column",
           }}
         >
-          <h1>Welcome Bhadwa</h1>
+          <h1>Welcome User</h1>
           <Box>
             <List>
               {accountLists.map((li, index) => {
@@ -68,7 +68,7 @@ const UserAccount = () => {
             width: "80%",
           }}
         >
-          <h1>Welcome Bhadwa</h1>
+          <h1>Welcome User</h1>
         </Box>
       </Box>
     </>

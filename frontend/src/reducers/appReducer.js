@@ -1,21 +1,18 @@
-
 const initialState = {
-  activeTab:0
-  };
-  
+  activeTab: 0,
+};
 
-const appReducer = (state = initialState, action) => { 
-    switch (action.type) {
-       case 'TABS':
-          return {
-            ...state, 
-            activeTab : action.payload
+const appReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "TABS":
+      return {
+        ...state,
+        activeTab: action.payload,
+      };
 
-          };
+    default:
+      return state;
+  }
+};
 
-       default:
-          return state;
-    }
- }
-
- export default appReducer;
+export default appReducer;

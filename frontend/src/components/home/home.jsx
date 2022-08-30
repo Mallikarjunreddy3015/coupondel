@@ -47,19 +47,18 @@ const brandImages = [
   },
 ];
 const Home = () => {
-  const [value, setValue] = useState(0);
   const dispatch = useDispatch();
   const changeValue = () => {
     dispatch(activeChange(1));
   };
   return (
-    <>
+    <div className="">
       <Carousel
         sx={{
-          mt: 11,
+          mt: 15,
         }}
-        interval={5000}
-        animation="slide"
+        interval={6000}
+        animation="fade"
         indicators={true}
         stopAutoPlayOnHover
         swipe
@@ -334,7 +333,7 @@ const Home = () => {
           <Button>Subscribe</Button>
         </Box>
       </Box>
-    </>
+    </div>
   );
 };
 
