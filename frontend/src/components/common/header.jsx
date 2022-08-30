@@ -18,6 +18,12 @@ import Logo from "../../Images/logo.png";
 import { NavLink } from "react-router-dom";
 import activeChange from "../../action/appAction";
 import { useSelector, useDispatch } from "react-redux";
+import { styled } from "@mui/material/styles";
+
+const StyledButton = styled(Button)`
+  border-radius: 3rem;
+  text-transform: none;
+`;
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -33,7 +39,7 @@ const Header = () => {
   const drawerLists = [
     {
       name: "My Account",
-      url: "#",
+      url: "/account",
     },
     {
       name: "About Us",
@@ -153,14 +159,14 @@ const Header = () => {
             </IconButton>
           </Box>
 
-          <Button
+          <StyledButton
             component={NavLink}
             to="/login"
             sx={{ mr: 2, textTransform: "none" }}
             variant="outlined"
           >
             Log in
-          </Button>
+          </StyledButton>
 
           <IconButton sx={{ mr: 0 }}>
             <NotificationsIcon />
@@ -204,6 +210,7 @@ const Header = () => {
         <IconButton sx={{ display: { xs: "block", md: "none" } }}>
           <NotificationsIcon />
         </IconButton>
+
         <IconButton
           onClick={handleClick}
           sx={{ mr: 2, display: { xs: "block", md: "none" } }}
@@ -223,7 +230,9 @@ const Header = () => {
           <MenuItem component={NavLink} to="/account" onClick={handleClose}>
             My Account
           </MenuItem>
-          <MenuItem onClick={handleClose}>Log out</MenuItem>
+          <MenuItem component={NavLink} to="/login" onClick={handleClose}>
+            Log in
+          </MenuItem>
         </Menu>
       </AppBar>
     </>

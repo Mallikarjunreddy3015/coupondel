@@ -36,6 +36,7 @@ const Signup = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
+            backgroundColor: "#fff",
           }}
         >
           <p
@@ -80,9 +81,9 @@ const Signup = () => {
           <Button
             sx={{
               textTransform: "none",
-              backgroundColor: "dodgerblue",
+              backgroundColor: "#1A73E8",
               "&:hover": {
-                backgroundColor: "dodgerblue",
+                backgroundColor: "#1A73E8",
               },
             }}
             type="submit"

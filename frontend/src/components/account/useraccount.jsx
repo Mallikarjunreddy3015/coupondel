@@ -2,6 +2,8 @@ import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import { NavLink } from "react-router-dom";
+import Profile from "./Profile";
+import Earnings from "./Earnings";
 
 const accountLists = [
   {
@@ -68,7 +70,8 @@ const UserAccount = () => {
             width: "80%",
           }}
         >
-          <h1>Welcome User</h1>
+          <Profile />
+          <Earnings />
         </Box>
       </Box>
     </>
