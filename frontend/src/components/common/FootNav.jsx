@@ -15,33 +15,28 @@ import ShareIcon from "@mui/icons-material/Share";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 import { useEffect } from "react";
-import activeChange from "../../action/appAction"
-import {  useDispatch } from "react-redux";
+import activeChange from "../../action/appAction";
+import { useDispatch } from "react-redux";
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    value: state.app.activeTab
+    value: state.app.activeTab,
   };
 };
 
-
 const FootNav = (props) => {
-  
-
   const [openDrawer, setOpenDrawer] = useState(false);
-  const[value, setValue] = useState(0);
+  const [value, setValue] = useState(0);
 
   const dispatch = useDispatch();
 
-  const changeValue = () => {
-   
-  }
+  const changeValue = () => {};
 
   const drawerList = ["Log in", "My Profile"];
   const drawerLists = [
     {
       name: "My Account",
-      url: "#",
+      url: "/account",
     },
     {
       name: "About Us",
@@ -52,10 +47,11 @@ const FootNav = (props) => {
       url: "/login",
     },
   ];
-useEffect(()=>{
-  setValue(props.value)
-},[props.value])
- 
+
+  useEffect(() => {
+    setValue(props.value);
+  }, [props.value]);
+
   return (
     <>
       <BottomNavigation
@@ -74,8 +70,8 @@ useEffect(()=>{
         showLabels
         value={value}
         onChange={(event, newValue) => {
-        setValue(newValue)
-        dispatch(activeChange(newValue))
+          setValue(newValue);
+          dispatch(activeChange(newValue));
         }}
       >
         <BottomNavigationAction
@@ -108,7 +104,12 @@ useEffect(()=>{
         />
 
         <BottomNavigationAction
-          sx={{ padding: "0px", width: "20%", minWidth: "10px" }}
+          sx={{
+            padding: "0px",
+            width: "20%",
+            minWidth: "10px",
+            display: "none",
+          }}
           onClick={() => {
             setOpenDrawer(!openDrawer);
           }}
@@ -147,6 +148,5 @@ useEffect(()=>{
     </>
   );
 };
-
 
 export default connect(mapStateToProps)(FootNav);

@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import ViteRestart from 'vite-plugin-restart'
-import dns from 'dns'
+// import dns from 'dns'
 // vite.config.js
 import { splitVendorChunkPlugin } from 'vite'
 
 
-dns.setDefaultResultOrder('verbatim')
+// dns.setDefaultResultOrder('verbatim')
 
 
 export default defineConfig({
