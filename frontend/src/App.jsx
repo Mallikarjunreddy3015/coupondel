@@ -9,6 +9,8 @@ import Signup from "./signup.jsx";
 import UserAccount from "./components/account/useraccount.jsx";
 import Refer from "./components/refer/refer.jsx";
 import { BrowserRouter  as Router, Route, Routes,Outlet } from "react-router-dom";
+
+
 const AppLayout = () => (
   <>
     <Header />
@@ -20,6 +22,8 @@ const AppLayout = () => (
     <FootNav />
   </>
 );
+
+
 const App = () => {
   return (
     <>
