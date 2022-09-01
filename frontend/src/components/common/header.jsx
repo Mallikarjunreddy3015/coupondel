@@ -111,10 +111,23 @@ const Header = () => {
             margin: "auto",
           }}
         >
+           <NavLink
+            className="navTab"
+            to="/"
+            id="0"
+            style={{
+              textDecoration: "none",
+              color: "#1976d2",
+              padding: "15px",
+            }}
+            // onClick={handleShadow}
+          >
+            {"Home"}
+          </NavLink>
           <NavLink
             className="navTab"
             to="/affiliates"
-            id="0"
+            id="1"
             style={{
               textDecoration: "none",
               color: "#1976d2",
@@ -125,7 +138,7 @@ const Header = () => {
             {"Stores"}
           </NavLink>
           <NavLink
-            id="1"
+            id="2"
             className="navTab"
             to="/coupons"
             underline="none"
@@ -136,7 +149,7 @@ const Header = () => {
           <NavLink
             to="/refer"
             className="navTab"
-            id="2"
+            id="3"
             underline="none"
             style={{ color: "#1976d2", padding: "15px" }}
           >
