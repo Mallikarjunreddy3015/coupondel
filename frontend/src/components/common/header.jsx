@@ -77,7 +77,7 @@ const Header = () => {
           boxShadow: "0 0 10px 1px #e0e0e0",
         }}
       >
-        <IconButton
+        {/* <IconButton
           sx={{
             mr: 1,
             ml: 3,
@@ -89,14 +89,14 @@ const Header = () => {
           }}
         >
           <MenuIcon />
-        </IconButton>
+        </IconButton> */}
 
         <NavLink className={"ignoreActive"} onClick={changeValue} to="/">
           <Box
             component="img"
             sx={{
-              marginLeft: "10px",
-              width: { md: 200, xs: 150 },
+              marginLeft: "3vw",
+              width: { md: 150, xs: 150 },
             }}
             src={Logo}
             alt="#"
