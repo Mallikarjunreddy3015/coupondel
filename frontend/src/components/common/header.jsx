@@ -9,13 +9,14 @@ import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import Link from "@mui/material/Link"
 
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../Images/logo.png";
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import activeChange from "../../action/appAction";
 import { useSelector, useDispatch } from "react-redux";
 import { styled } from "@mui/material/styles";
@@ -242,6 +243,9 @@ const Header = () => {
         >
           <MenuItem component={NavLink} to="/account" onClick={handleClose}>
             My Account
+          </MenuItem>
+          <MenuItem component={Link} href="http://www.coupondel.com/" onClick={handleClose}>
+            About
           </MenuItem>
           <MenuItem component={NavLink} to="/login" onClick={handleClose}>
             Log in
