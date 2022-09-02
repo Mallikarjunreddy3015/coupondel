@@ -6,7 +6,7 @@ import Home from "./components/home/home.jsx";
 import Coupons from "./components/coupons/coupons.jsx";
 import Login from "./login.jsx";
 import Signup from "./signup.jsx";
-import UserAccount from "./components/account/useraccount.jsx";
+import UserAccount from "./components/account/Useraccount.jsx";
 import Refer from "./components/refer/refer.jsx";
 import {
   BrowserRouter as Router,
@@ -14,6 +14,8 @@ import {
   Routes,
   Outlet,
 } from "react-router-dom";
+import Profile from "./components/account/Profile.jsx";
+import Earnings from "./components/account/Earnings.jsx";
 const AppLayout = () => (
   <>
     <Header />
@@ -38,6 +40,8 @@ const App = () => {
             <Route path="/coupons" element={<Coupons />} />
             <Route path="/account" element={<UserAccount />} />
             <Route path="/refer" element={<Refer />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/earnings" element={<Earnings />} />
           </Route>
         </Routes>
       </Router>

@@ -1,18 +1,18 @@
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
-import { NavLink } from "react-router-dom";
+import { NavLink, Router } from "react-router-dom";
 import Profile from "./Profile";
 import Earnings from "./Earnings";
 
 const accountLists = [
   {
     name: "Profile",
-    url: "/account",
+    url: "/profile",
   },
   {
     name: "My Earnings",
-    url: "/account",
+    url: "/earnings",
   },
   {
     name: "Payments",
@@ -69,10 +69,7 @@ const UserAccount = () => {
             backgroundColor: "gray",
             width: "80%",
           }}
-        >
-          <Profile />
-          <Earnings />
-        </Box>
+        ></Box>
       </Box>
     </>
   );

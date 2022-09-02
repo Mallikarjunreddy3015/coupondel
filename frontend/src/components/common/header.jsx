@@ -119,6 +119,7 @@ const Header = () => {
               textDecoration: "none",
               color: "#1976d2",
               padding: "15px",
+              transition: "all 0.6s",
             }}
             // onClick={handleShadow}
           >
@@ -129,7 +130,11 @@ const Header = () => {
             className="navTab"
             to="/coupons"
             underline="none"
-            style={{ color: "#1976d2", padding: "15px" }}
+            style={{
+              color: "#1976d2",
+              padding: "15px",
+              transition: "all 0.6s",
+            }}
           >
             {"Coupons"}
           </NavLink>
@@ -138,7 +143,11 @@ const Header = () => {
             className="navTab"
             id="2"
             underline="none"
-            style={{ color: "#1976d2", padding: "15px" }}
+            style={{
+              color: "#1976d2",
+              padding: "15px",
+              transition: "all 0.6s",
+            }}
           >
             {"Refer & Earn"}
           </NavLink>
