@@ -9,13 +9,14 @@ import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import Link from "@mui/material/Link"
 
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../Images/logo.png";
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import activeChange from "../../action/appAction";
 import { useSelector, useDispatch } from "react-redux";
 import { styled } from "@mui/material/styles";
@@ -77,7 +78,7 @@ const Header = () => {
           boxShadow: "0 0 10px 1px #e0e0e0",
         }}
       >
-        <IconButton
+        {/* <IconButton
           sx={{
             mr: 1,
             ml: 3,
@@ -89,14 +90,14 @@ const Header = () => {
           }}
         >
           <MenuIcon />
-        </IconButton>
+        </IconButton> */}
 
         <NavLink className={"ignoreActive"} onClick={changeValue} to="/">
           <Box
             component="img"
             sx={{
-              marginLeft: "10px",
-              width: { md: 200, xs: 150 },
+              marginLeft: "3vw",
+              width: { md: 150, xs: 150 },
             }}
             src={Logo}
             alt="#"
@@ -111,10 +112,23 @@ const Header = () => {
             margin: "auto",
           }}
         >
+           <NavLink
+            className="navTab"
+            to="/"
+            id="0"
+            style={{
+              textDecoration: "none",
+              color: "#1976d2",
+              padding: "15px",
+            }}
+            // onClick={handleShadow}
+          >
+            {"Home"}
+          </NavLink>
           <NavLink
             className="navTab"
             to="/affiliates"
-            id="0"
+            id="1"
             style={{
               textDecoration: "none",
               color: "#1976d2",
@@ -126,7 +140,7 @@ const Header = () => {
             {"Stores"}
           </NavLink>
           <NavLink
-            id="1"
+            id="2"
             className="navTab"
             to="/coupons"
             underline="none"
@@ -141,7 +155,7 @@ const Header = () => {
           <NavLink
             to="/refer"
             className="navTab"
-            id="2"
+            id="3"
             underline="none"
             style={{
               color: "#1976d2",
@@ -238,6 +252,9 @@ const Header = () => {
         >
           <MenuItem component={NavLink} to="/account" onClick={handleClose}>
             My Account
+          </MenuItem>
+          <MenuItem component={Link} href="http://www.coupondel.com/" onClick={handleClose}>
+            About
           </MenuItem>
           <MenuItem component={NavLink} to="/login" onClick={handleClose}>
             Log in

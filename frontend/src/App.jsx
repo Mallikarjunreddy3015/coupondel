@@ -26,6 +26,8 @@ const AppLayout = () => (
     <FootNav />
   </>
 );
+
+
 const App = () => {
   return (
     <>
