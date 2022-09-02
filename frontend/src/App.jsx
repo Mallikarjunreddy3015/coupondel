@@ -16,6 +16,7 @@ import {
 } from "react-router-dom";
 import Profile from "./components/account/Profile.jsx";
 import Earnings from "./components/account/Earnings.jsx";
+import AccountTab from './components/account/AccountTab';
 const AppLayout = () => (
   <>
     <Header />
@@ -40,10 +41,11 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/affiliates" element={<Affiliates />} />
             <Route path="/coupons" element={<Coupons />} />
-            <Route path="/account" element={<UserAccount />} />
+            <Route path="/account" element={<AccountTab />}>
+              <Route path="/account/profile" element={<Profile/>}/>
+              <Route path="/account/earnings" element={<Earnings/>}/>
+            </Route>
             <Route path="/refer" element={<Refer />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/earnings" element={<Earnings />} />
           </Route>
         </Routes>
       </Router>

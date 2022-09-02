@@ -250,7 +250,7 @@ const Header = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <MenuItem component={NavLink} to="/account" onClick={handleClose}>
+          <MenuItem component={NavLink} to="/account/profile" onClick={handleClose}>
             My Account
           </MenuItem>
           <MenuItem component={Link} href="http://www.coupondel.com/" onClick={handleClose}>
