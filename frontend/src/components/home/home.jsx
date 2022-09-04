@@ -75,8 +75,9 @@ const Home = () => {
     <div className="">
       <Carousel
         sx={{
-          width:"90vw",
+          width:{xs:"100vw",md:"90vw"},
           margin:"auto",
+          mt:10
         }}
         interval={6000}
         animation="fade"
@@ -105,7 +106,7 @@ const Home = () => {
       <Box
         sx={{
           width: "90vw",
-          margin: " 50px auto 20px auto",
+          margin: " 30px auto 20px auto",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
