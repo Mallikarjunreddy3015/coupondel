@@ -11,6 +11,7 @@ import { NavLink } from "react-router-dom";
 import activeChange from "../../action/appAction";
 import { useDispatch } from "react-redux";
 import { styled } from "@mui/material/styles";
+import { margin } from "@mui/system";
 
 var images = [
   {
@@ -74,7 +75,8 @@ const Home = () => {
     <div className="">
       <Carousel
         sx={{
-          mt: 13,
+          width:"90vw",
+          margin:"auto",
         }}
         interval={6000}
         animation="fade"
@@ -83,14 +85,13 @@ const Home = () => {
         swipe
       >
         {images.map((image, index) => (
-          <Box component={NavLink} key={index} to="/">
+          <Box component={NavLink} key={index} to="/" >
             <Box
               component="img"
               sx={{
-                display: "block",
-                margin: " 0 auto",
-                width: "90vw",
-                height: { xs: "15vh", md: "30vh" },
+                width: "100%",
+                objectFit:"fill",
+                height:{xs:"20vh",md:"35vh"}
               }}
               src={image.url}
               alt="pic"

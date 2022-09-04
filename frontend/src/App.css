@@ -39,3 +39,6 @@ a{
 .ignoreActive{
     background-color:transparent;
 }
+.headerNavButton{
+    height: calc(100%-70px);
+}
