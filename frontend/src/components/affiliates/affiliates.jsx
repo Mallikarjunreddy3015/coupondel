@@ -9,6 +9,7 @@ const carddata = {
   details:
     "Lorem ipsum dolor sit a fugiat ratione delectus illum necessitatibus molestias, doloribus ipsum! Animi, alias.",
   discount: "8%",
+  source : "https://amzn.to/3euaBTI"
 };
 const allcards = [
   carddata,
@@ -42,6 +43,7 @@ const Affiliates = () => {
         img={carddata.img}
         details={carddata.details}
         discount={carddata.discount}
+        source ={carddata.source}
       ></MCard>
     );
   });
