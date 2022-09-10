@@ -16,7 +16,8 @@ import {
 } from "react-router-dom";
 import Profile from "./components/account/Profile.jsx";
 import Earnings from "./components/account/Earnings.jsx";
-import AccountTab from './components/account/AccountTab';
+import AccountTab from "./components/account/AccountTab";
+import Payments from "./components/account/Payments.jsx";
 const AppLayout = () => (
   <>
     <Header />
@@ -27,7 +28,6 @@ const AppLayout = () => (
     <FootNav />
   </>
 );
-
 
 const App = () => {
   return (
@@ -42,8 +42,9 @@ const App = () => {
             <Route path="/affiliates" element={<Affiliates />} />
             <Route path="/coupons" element={<Coupons />} />
             <Route path="/account" element={<AccountTab />}>
-              <Route path="/account/profile" element={<Profile/>}/>
-              <Route path="/account/earnings" element={<Earnings/>}/>
+              <Route path="/account/profile" element={<Profile />} />
+              <Route path="/account/earnings" element={<Earnings />} />
+              <Route path="/account/payments" element={<Payments />} />
             </Route>
             <Route path="/refer" element={<Refer />} />
           </Route>
