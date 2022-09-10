@@ -48,9 +48,7 @@ const Affiliates = () => {
   return (
     <>
       <Container sx={{ display: "flex", flexWrap: "wrap", mt: 11, mb: 10 }}>
-        <Typography variant="h4" sx={{ display: "block", width: "100%" }}>
-          All Stores
-        </Typography>
+        <h1>All Stores </h1>
 
         <a href="https://amzn.to/3qutdFU" target="_blank">
           <img
