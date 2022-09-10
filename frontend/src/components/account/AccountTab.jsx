@@ -1,5 +1,5 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+import React from "react";
+import { Outlet } from "react-router-dom";
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -15,23 +15,23 @@ const accountLists = [
   },
   {
     name: "Payments",
-    url: "/account",
+    url: "/account/payments",
   },
   {
     name: "My Questions and Answers",
-    url: "/account",
+    url: "/account/questions",
   },
 ];
 
 const AccountTab = () => {
   return (
     <>
-    <Box
+      <Box
         sx={{
           display: "flex",
           flexDirection: { md: "row", xs: "column" },
           height: "100vh",
-          gap:"14px",
+          gap: "14px",
           width: "90%",
           margin: "auto",
         }}
@@ -63,10 +63,9 @@ const AccountTab = () => {
 
         {/* ....................right box.................... */}
         <Outlet />
-        
       </Box>
     </>
-  )
-}
+  );
+};
 
-export default AccountTab
+export default AccountTab;
