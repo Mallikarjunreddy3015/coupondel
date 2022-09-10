@@ -18,7 +18,7 @@ const MCard=(props)=> {
               }
               
               }}>
-      <CardActionArea href='https://google.com'>
+      <CardActionArea href={'#'}>
         <div>
            <CardMedia
           component="img"
