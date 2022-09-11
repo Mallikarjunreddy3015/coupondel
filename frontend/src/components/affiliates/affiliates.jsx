@@ -48,17 +48,10 @@ const Affiliates = () => {
     );
   });
   return (
-    <>
+    <> 
+     
       <Container sx={{ display: "flex", flexWrap: "wrap", mt: 11, mb: 10 }}>
-        <h1>All Stores </h1>
-
-        <a href="https://amzn.to/3qutdFU" target="_blank">
-          <img
-            src="https://m.media-amazon.com/images/I/41EsjNLBMBL._AC_AC_SR98,95_.jpg"
-           
-            alt=""
-          />
-        </a>
+       <h1>All Stores </h1>
         {cardList}
       </Container>
     </>
