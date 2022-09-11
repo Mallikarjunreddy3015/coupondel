@@ -18,7 +18,7 @@ import Profile from "./components/account/Profile.jsx";
 import Earnings from "./components/account/Earnings.jsx";
 import AccountTab from "./components/account/AccountTab";
 import Payments from "./components/account/Payments.jsx";
-const AppLayout = () => (
+const AppLayout1 = () => (
   <>
     <Header />
 
@@ -28,17 +28,26 @@ const AppLayout = () => (
     <FootNav />
   </>
 );
-
+const AppLayout2 = () => (
+  <>
+    <Header />
+    <Outlet />
+  </>
+);
 const App = () => {
   return (
     <>
       <Router>
         <Routes>
+
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
 
-          <Route element={<AppLayout />}>
+          <Route element={<AppLayout1 />}>
             <Route path="/" element={<Home />} />
+          </Route>
+
+          <Route element={<AppLayout2 />}>
             <Route path="/affiliates" element={<Affiliates />} />
             <Route path="/coupons" element={<Coupons />} />
             <Route path="/account" element={<AccountTab />}>
@@ -48,6 +57,7 @@ const App = () => {
             </Route>
             <Route path="/refer" element={<Refer />} />
           </Route>
+
         </Routes>
       </Router>
     </>
