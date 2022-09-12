@@ -4,6 +4,7 @@ import Container from "@mui/system/Container";
 import MCard from "./Card";
 import Amazon from "../../images/amazon.png";
 import Link from "@mui/material/Link";
+import { Box } from "@mui/material";
 const carddata = {
   img: `${Amazon}`,
   details:
@@ -48,19 +49,16 @@ const Affiliates = () => {
     );
   });
   return (
-    <>
-      <Container sx={{ display: "flex", flexWrap: "wrap", mt: 11, mb: 10 }}>
-        <h1>All Stores </h1>
+    <> 
+    <Box sx = {{mt : 15, textAlign:"center"}}><h1>All Stores </h1></Box>
+     
+      <Container sx={{  mt : 5 , display: "flex", flexWrap: "wrap", mb: 10 }}>
 
-        <a href="https://amzn.to/3qutdFU" target="_blank">
-          <img
-            src="https://m.media-amazon.com/images/I/41EsjNLBMBL._AC_AC_SR98,95_.jpg"
-           
-            alt=""
-          />
-        </a>
+       
         {cardList}
+
       </Container>
+
     </>
   );
 };
