@@ -26,12 +26,16 @@ const AppLayout1 = () => (
 
     <Footer />
     <FootNav />
+    
   </>
 );
 const AppLayout2 = () => (
   <>
     <Header />
+
     <Outlet />
+
+    <FootNav />
   </>
 );
 const App = () => {
