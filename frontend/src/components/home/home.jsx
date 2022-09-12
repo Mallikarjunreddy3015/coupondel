@@ -80,7 +80,7 @@ const Home = () => {
           mt: 10,
         }}
         interval={6000}
-        animation="fade"
+        animation="slide"
         indicators={true}
         stopAutoPlayOnHover
         swipe
