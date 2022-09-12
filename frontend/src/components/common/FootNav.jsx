@@ -63,9 +63,10 @@ const FootNav = (props) => {
           bottom: 0,
           mt: "auto",
           display: { xs: "flex", md: "none", sm: "none" },
-          boxShadow: "0 0 10px 1px #e0e0e0",
+          boxShadow: "none",
           overflow: "auto",
           flexWrap: "wrap",
+          borderTop: "1px solid #e7e7e7",
         }}
         showLabels
         value={value}
