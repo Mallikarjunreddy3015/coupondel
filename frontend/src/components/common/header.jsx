@@ -9,14 +9,14 @@ import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import Link from "@mui/material/Link"
+import Link from "@mui/material/Link";
 
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../../Images/logo.png";
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import activeChange from "../../action/appAction";
 import { useSelector, useDispatch } from "react-redux";
 import { styled } from "@mui/material/styles";
@@ -75,7 +75,8 @@ const Header = () => {
           flexDirection: "row",
           alignItems: "center",
           padding: "10px 0",
-          boxShadow: "0 0 10px 1px #e0e0e0",
+          boxShadow: "none",
+          borderBottom: "1px solid #e7e7e7",
         }}
       >
         {/* <IconButton
@@ -112,7 +113,7 @@ const Header = () => {
             margin: "auto",
           }}
         >
-           <NavLink
+          <NavLink
             className="navTab"
             to="/"
             id="0"
@@ -250,10 +251,18 @@ const Header = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <MenuItem component={NavLink} to="/account/profile" onClick={handleClose}>
+          <MenuItem
+            component={NavLink}
+            to="/account/profile"
+            onClick={handleClose}
+          >
             My Account
           </MenuItem>
-          <MenuItem component={Link} href="http://www.coupondel.com/" onClick={handleClose}>
+          <MenuItem
+            component={Link}
+            href="http://www.coupondel.com/"
+            onClick={handleClose}
+          >
             About
           </MenuItem>
           <MenuItem component={NavLink} to="/login" onClick={handleClose}>

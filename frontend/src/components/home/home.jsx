@@ -75,9 +75,9 @@ const Home = () => {
     <div className="">
       <Carousel
         sx={{
-          width:{xs:"100vw",md:"90vw"},
-          margin:"auto",
-          mt:10
+          width: { xs: "100vw", md: "90vw" },
+          margin: "auto",
+          mt: 10,
         }}
         interval={6000}
         animation="fade"
@@ -86,13 +86,13 @@ const Home = () => {
         swipe
       >
         {images.map((image, index) => (
-          <Box component={NavLink} key={index} to="/" >
+          <Box component={NavLink} key={index} to="/">
             <Box
               component="img"
               sx={{
                 width: "100%",
-                objectFit:"fill",
-                height:{xs:"20vh",md:"35vh"}
+                objectFit: "fill",
+                height: { xs: "20vh", md: "35vh" },
               }}
               src={image.url}
               alt="pic"
@@ -297,7 +297,7 @@ const Home = () => {
           backgroundColor: "#d4d4d4",
         }}
       >
-        images and texts
+        Coming Soon
       </Box>
 
       {/* ..................................How Coupndel Works............................. */}
@@ -332,7 +332,7 @@ const Home = () => {
           backgroundColor: "#d4d4d4",
         }}
       >
-        images and texts
+        Coming soon
       </Box>
       {/* ..................................Subscribe to our mail letter............................. */}
 
